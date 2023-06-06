@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --primary-color: #0070f3;
+    --secondary-color: #3F93EC;
+    --tertiary-color: #2b8af0;
+    --text1: #0067C8;
+    --bg1: #F2F2F2;
+    --text2: #676767;
+    --text3: #F2F2F2;
+    --text4: #494949;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+//container
+
+.container1 {
+    padding-top: 3.3rem;
+    display: flex;
+
+    .sidebar{
+        flex: 0 0 8%;
+    }
+    .main-content{
+        flex:  1;
+    }
+}
+
+.container2 {
+    max-width: 1900px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.container3 {
+    padding: 1rem 1.5rem;
+}
+
+//font sizes
+
+.fontsm {
+    font-size: 0.85rem;
+}
+
+//heading
+.font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fontsz1 {
+    font-size: 1.05rem;
+}
+
+.fontsz2 {
+    font-size: .9rem;
+}
+
+.fontsz3 {
+    font-size: .75rem;
+}
+
+.heading1 {
+    @apply font1 text-xl text-gray-600 mb-4;
+}
+
+.heading2 {
+    @apply font1 text-base;
+}
+
+.context1 {
+    @apply text-sm font1 text-gray-600;
+}
+
+//card for border radius 
+.card2 {
+    @apply px-3 py-2 border border-gray-300 rounded-lg
+}
+
+.card3{
+    @apply cursor-pointer flex items-center px-1 py-0.5 rounded border
+}
+
+.input1 {
+    @apply outline-none border border-gray-300 rounded-lg
+}
+
+//background colors
+
+.test {
+    background-color: red;
+}
+
+.primary {
+    background-color: var(--text1);
+}
+
+.hoverColor1:hover {
+    border-radius: 2px;
+    background-color: var(--tertiary-color);    
+}
+
+
+//layouts
+
+.left {
+    width: 80%;
+    margin-right: 1rem;
+    align-self: flex-start;
+
+    @media only screen and (max-width: 920px) {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.right {
+    width: 20%;
+    align-self: flex-start;
+
+    @media only screen and (max-width: 920px) {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+//after effect
+.after:after {
+    content: '';
+    display: inline-block;
+    height: 14px;
+    width: 2px;
+}
+
+
+.bp1 {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.hide3 {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .hide1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .hide2 {
+        display: none;
+    }
+
+    .hide3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .bp1 {
+        display: flex;
+        justify-content: space-between !important;
+    }
+
+    .fillit {
+        position: absolute;
+        // width: 100%;
+    }
+}
+
+.text4 {
+    color: var(--text4);
+}
+
+.bg1 {
+    background-color: var(--bg1);
+}
+
+.showMe {
+    animation: cssAnimation 0s 1s forwards;
+    visibility: hidden;
+}
+
+@keyframes cssAnimation {
+    to {
+        visibility: visible;
+    }
+}
+
+//card
+.project-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: start;
+    gap: .75rem;
+
+    .card {
+        color: var(--bg1);
+        background-color: var(--tertiary-color);
+        border-radius: 10px;
+        transition: all .5s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: .35rem .35rem .5rem rgba(0, 0, 0, .2);
+            background-color: var(--primary-color);
+        }
+
+        &-figure {
+            width: 100%;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+
+        &-img {
+            width: inherit;
+            object-fit: cover;
+            height: 15rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        &-info {
+            padding: 1rem;
+        }
+
+        &-desc {
+            font-family: 'Open Sans', sans-serif;
+
+        }
+    }
+}
+
+//ul sidebar
+.active{
+    @apply bg-zinc-200;
+}
+
+
+//buttons
+.btn {
+    padding: .5rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--bg1);
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--text1);
+}
+
+.btn2 {
+    @extend .btn;
+    border-radius: 100px;
+    text-align: right;
+    margin-top: .25rem;
+    padding: .5rem 1rem;
+    outline: none;
+}
+
+
+//swiper
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(255, 255, 255) !important;
+}
