@@ -57,10 +57,40 @@ const page = () => {
                 </thead>
                 <tbody className=''>
                     <tr className="border-b border-b-gray-200">
-                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id=""/></td>
+                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
                         <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">Akash</td>
                         <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">{stri}</td>
-                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">3 jun 12:23</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">{new Date().toDateString()}</td>
+                    </tr>
+                    <tr className="border-b border-b-gray-200">
+                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">Akash</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">{stri}</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">{new Date().toDateString()}</td>
+                    </tr>
+                    <tr className="border-b border-b-gray-200">
+                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">Akash</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">{stri}</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">{new Date().toDateString()}</td>
+                    </tr>
+                    <tr className="border-b border-b-gray-200">
+                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">Akash</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">{stri}</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">{new Date().toDateString()}</td>
+                    </tr>
+                    <tr className="border-b border-b-gray-200">
+                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">Akash</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">{stri}</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">{new Date().toDateString()}</td>
+                    </tr>
+                    <tr className="border-b border-b-gray-200">
+                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">Akash</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">{stri}</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">{new Date().toDateString()}</td>
                     </tr>
 
                 </tbody>
