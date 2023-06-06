@@ -68,7 +68,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="flex mr-6 items-center">
-                            <span className='text-lg tracking-tight min-[861px]:hidden'>LMS</span>
+                            {/* <span className='text-lg tracking-tight min-[861px]:hidden'>LMS</span> */}
                             <span className='text-lg tracking-tight max-[860px]:hidden'>Learning Management System</span>
 
                         </div>
@@ -102,37 +102,51 @@ const Navbar = () => {
             </nav>
             {
                 toggle && <>
-                    <div className='fixed w-full h-fit bg1 z-10 border border-b-4 border-b-zinc-300' ref={toggleref}>
+                    <div className='fixed top-11 w-full h-fit bg1 z-50 border border-b-4 border-b-zinc-300' ref={toggleref}>
                         <ul>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 flex items-center justify-between'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><AiFillHome className='mr-2' size={18} />Home</span>
-                                <div onClick={() => { setArrow((prev) => !prev) }}>
-                                    {arrow ? <SlArrowDown size={12} /> : <SlArrowUp size={12} />}
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><AiFillHome className='mr-2' size={18} />Home</span></Link></li>
+                            <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
+                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/'} className='w-full flex items-center justify-between'>
+                                    <span className='p-4 w-full text-sm tracking-wide flex items-center'>
+                                        <BsBoxes className='mr-2' size={18} />
+                                        Semesters
+                                    </span>
+                                </Link>
+                                <div onClick={() => { setArrow((prev) => !prev) }} className='p-5'>
+                                    {arrow ? <SlArrowDown size={12} className='h-full w-full' /> : <SlArrowUp size={12} className='h-full w-full' />}
                                 </div>
-                            </Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 flex items-center justify-between'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><BsBoxes className='mr-2' size={18} />Semesters</span>
-                                <div onClick={() => { setArrow((prev) => !prev) }}>
-                                    {arrow ? <SlArrowDown size={12} /> : <SlArrowUp size={12} />}
+                            </li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><IoGridSharp className='mr-2' size={18} />Catalogue</span></Link></li>
+                            <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
+                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/'} className='w-full flex items-center justify-between'>
+                                    <span className='p-4 w-full text-sm tracking-wide flex items-center'>
+                                        <FaUserAlt className='mr-2' size={18} />
+                                        Users
+                                    </span>
+                                </Link>
+                                <div onClick={() => { setArrow((prev) => !prev) }} className='p-5'>
+                                    {arrow ? <SlArrowDown size={12} className='h-full w-full' /> : <SlArrowUp size={12} className='h-full w-full' />}
                                 </div>
-                            </Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 block'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><IoGridSharp className='mr-2' size={18} />Catalogue</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 flex items-center justify-between'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><FaUserAlt className='mr-2' size={18} />Users</span>
-                                <div onClick={() => { setArrow((prev) => !prev) }}>
-                                    {arrow ? <SlArrowDown size={12} /> : <SlArrowUp size={12} />}
+                            </li>
+                            <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
+                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/'} className='w-full flex items-center justify-between'>
+                                    <span className='p-4 w-full text-sm tracking-wide flex items-center'>
+                                        <ImBooks className='mr-2' size={18} />
+                                        Resources
+                                    </span>
+                                </Link>
+                                <div onClick={() => { setArrow((prev) => !prev) }} className='p-5'>
+                                    {arrow ? <SlArrowDown size={12} className='h-full w-full' /> : <SlArrowUp size={12} className='h-full w-full' />}
                                 </div>
-                            </Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 flex items-center justify-between'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><ImBooks className='mr-2' size={18} />Resources</span>
-                                <div onClick={() => { setArrow((prev) => !prev) }}>
-                                    {arrow ? <SlArrowDown size={12} /> : <SlArrowUp size={12} />}
-                                </div>
-                            </Link></li>
+                            </li>
 
-                            <li className='cursor-pointer bg-zinc-300 border-b'><span className='w-fit inline-block text-sm tracking-wide mr-1.5 p-4 font-semibold'>Others</span></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 block'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><BiSupport className='mr-2' size={18} />Help</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 block'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><MdEmail className='mr-2' size={18} />Inbox</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 block'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><AiFillBell className='mr-2' size={18} />Notifications</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 block'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><AiFillCalendar className='mr-2' size={18} />Calendar</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 block'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><FaUserAlt className='mr-2' size={18} />Profile</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'#'} className='p-4 block'><span className='w-fit text-sm tracking-wide mr-1.5 flex items-center'><MdOutlineLogout className='mr-2' size={18} />Log out</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer bg-zinc-300 border-b'><span className='p-4 w-full inline-block text-sm tracking-wide mr-1.5 font-semibold'>Others</span></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><BiSupport className='mr-2' size={18} />Help</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/inbox'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdEmail className='mr-2' size={18} />Inbox</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/notifications'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillBell className='mr-2' size={18} />Notifications</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/calendar'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillCalendar className='mr-2' size={18} />Calendar</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/user'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><FaUserAlt className='mr-2' size={18} />Profile</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdOutlineLogout className='mr-2' size={18} />Log out</span></Link></li>
                         </ul>
                     </div>
                 </>

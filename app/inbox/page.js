@@ -16,6 +16,8 @@ const page = () => {
         //search based on input value
     }
 
+    const stri = 'This is a subject of the Inbox where I can write anything and everything I want.';
+
     return (
         <div className='min-h-screen'>
             <div className='flex items-center fontsz2 border-b-2 pb-1'>
@@ -44,50 +46,26 @@ const page = () => {
                 <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><RxCross2 className='mr-1 group-hover:text-red-600' size={12} />Mark as unread</div>
                 <div className='cursor-pointer flex items-center px-2 py-0.5 rounded-tr rounded-br border group border-l-0'><MdDelete className='mr-1 group-hover:text-red-600' size={12} />Delete</div>
             </div>
-            <div className="flex flex-col">
-                <div className="py-2">
-                    <div className="overflow-hidden">
-                        <table className="text-left text-sm font-light w-full ">
-                            <thead className="border-b font-medium bg-gray-200">
-                                <tr>
-                                    <th scope="col" className="px-6 py-2 w-10"><input type="checkbox" name="" id="" /></th>
-                                    <th scope="col" className="px-6 py-2 w-10">#</th>
-                                    <th scope="col" className="px-6 py-2">From</th>
-                                    <th scope="col" className="px-6 py-2">Subject</th>
-                                    <th scope="col" className="px-6 py-2 w-10">Sent</th>
-                                    <th scope="col" className="px-6 py-2 w-10">Read</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr className="border-b border-b-gray-200">
-                                    <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
-                                    <td className="whitespace-nowrap px-6 py-2 font-medium">1</td>
-                                    <td className="whitespace-nowrap px-6 py-2">Mark</td>
-                                    <td className="whitespace-nowrap px-6 py-2">Otto</td>
-                                    <td className="whitespace-nowrap px-6 py-2">@mdo</td>
-                                    <td className="whitespace-nowrap px-6 py-2">@mdo</td>
-                                </tr>
-                                <tr className="border-b border-b-gray-200">
-                                    <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
-                                    <td className="whitespace-nowrap px-6 py-2 font-medium">2</td>
-                                    <td className="whitespace-nowrap px-6 py-2">Jacob</td>
-                                    <td className="whitespace-nowrap px-6 py-2">Thornton</td>
-                                    <td className="whitespace-nowrap px-6 py-2">@fat</td>
-                                    <td className="whitespace-nowrap px-6 py-2">@fat</td>
-                                </tr>
-                                <tr className="border-b border-b-gray-200">
-                                    <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
-                                    <td className="whitespace-nowrap px-6 py-2 font-medium">3</td>
-                                    <td className="whitespace-nowrap px-6 py-2">Larry</td>
-                                    <td className="whitespace-nowrap px-6 py-2">Wild</td>
-                                    <td className="whitespace-nowrap px-6 py-2">@twitter</td>
-                                    <td className="whitespace-nowrap px-6 py-2">@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            <table className="my-2 text-left text-sm font-light w-full table-fixed">
+                <thead className="border-b font-medium bg-gray-200">
+                    <tr>
+                        <th scope="col" className="px-6 py-2 w-16"><input type="checkbox" name="" id="" /></th>
+                        <th scope="col" className="px-6 py-2">From</th>
+                        <th scope="col" className="px-6 py-2">Subject</th>
+                        <th scope="col" className="px-6 py-2 text-right">Sent</th>
+                    </tr>
+                </thead>
+                <tbody className=''>
+                    <tr className="border-b border-b-gray-200">
+                        <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id=""/></td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">Akash</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden">{stri}</td>
+                        <td className="whitespace-nowrap px-6 py-2 text-ellipsis overflow-hidden text-right">3 jun 12:23</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
         </div>
     )
 }
