@@ -56,6 +56,16 @@ const page = () => {
         })
         const data = await res.json();
         if (data.registered) {
+            toast.success('User Registered Successfully! Please login.', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
             setUserDetails({
                 fname: '',
                 lname: '',
