@@ -30,13 +30,13 @@ const page = () => {
     return (
         <>
             <section className='relative'>
-                <nav className='fixed z-10 flex justify-between w-full items-center px-6 backdrop-blur-sm max-[516px]:px-2'>
+                <nav className='fixed z-10 flex justify-between w-full items-center px-6 backdrop-blur-sm max-[516px]:pl-0 max-[516px]:pr-2'>
                     <Image src='/auvlogo2.png' width={150} height={100} alt='univlogo' className='max-[516px]:w-[120px]'></Image>
                     <div className='fontsz2 max-[480px]:hidden'>
                         <Link href={'/register'} className='btn2 mr-2'>Register for a Course</Link>
                         <button className='btn2' onClick={() => setShowLogin(true)}>Login</button>
                     </div>
-                    <div className='fontsz2 min-[480px]:hidden'>
+                    <div className='fontsz2 min-[481px]:hidden'>
                         <div onClick={() => { setToggle(prev => !prev) }}>
                             {
                                 !toggle ? <HiBars3 size={25} className='cursor-pointer text-white' /> : <RxCross2 size={25} className='font-thin cursor-pointer text-white' />
