@@ -31,7 +31,7 @@ const page = () => {
         <>
             <section className='relative'>
                 <nav className='fixed z-10 flex justify-between w-full items-center px-6 backdrop-blur-sm max-[516px]:px-2'>
-                    <Image src='/auvlogo2transparent.png' width={150} height={100} alt='univlogo' className='max-[516px]:w-[80px]'></Image>
+                    <Image src='/auvlogo2transparent.png' width={150} height={100} alt='univlogo' className='max-[516px]:w-[120px]'></Image>
                     <div className='fontsz2 max-[480px]:hidden'>
                         <Link href={'/register'} className='btn2 mr-2'>Register for a Course</Link>
                         <button className='btn2' onClick={() => setShowLogin(true)}>Login</button>
@@ -47,7 +47,7 @@ const page = () => {
 
                 {
                     toggle && <>
-                        <div className='fixed top-11 w-full h-fit bg1 z-50 border border-b-4 border-b-zinc-300' ref={toggleref}>
+                        <div className='fixed top-[70px] w-full h-fit bg1 z-50 border border-b-4 border-b-zinc-300' ref={toggleref}>
                             <ul>
                                 <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/register'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><ImBooks className='mr-2' size={18} />Register for a Course</span></Link></li>
                                 <li onClick={() => { setToggle(prev => !prev); setShowLogin(true); }} className='cursor-pointer hover:bg-zinc-200 border-b'><button className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdOutlineLogout className='mr-2' size={18} />Log In</span></button></li>

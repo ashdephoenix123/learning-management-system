@@ -168,10 +168,10 @@ const page = () => {
                     theme="light"
                 />
                 <nav className='px-6 bg-white shadow max-[516px]:px-2'>
-                    <Image src='/auvlogo2transparent.png' width={150} height={100} alt='univlogo' className='max-[516px]:w-[80px]'></Image>
+                    <Image src='/auvlogo2transparent.png' width={150} height={100} alt='univlogo' className='max-[516px]:w-[120px]'></Image>
                 </nav>
                 <div className='px-6 min-h-screen max-[486px]:px-2'>
-                    <h3 className='text-3xl text-center text-gray-600 font-semibold my-8 max-[486px]:text-xl max-[486px]:mt-2 max-[486px]:mb-6'>Register for a <span className='text-purple-600 underline'>Course</span> </h3>
+                    <h3 className='text-3xl text-center text-gray-600 font-semibold my-8 max-[486px]:text-xl max-[486px]:my-6'>Register for a <span className='text-purple-600 underline'>Course</span> </h3>
                     <form onSubmit={handleSubmit} className='card2 w-[550px] max-[600px]:w-full mx-auto'>
                         <p className='mt-4 fontsz2 mb-2 font-semibold'>Enter your details:</p>
                         <div className='mb-2 flex justify-between items-center  max-[486px]:block'>
