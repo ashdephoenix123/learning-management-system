@@ -167,7 +167,7 @@ const page = () => {
                     pauseOnHover
                     theme="light"
                 />
-                <nav className='px-6 bg-white shadow max-[516px]:px-2'>
+                <nav className='px-6 bg-white shadow max-[516px]:px-0'>
                     <Image src='/auvlogo2transparent.png' width={150} height={100} alt='univlogo' className='max-[516px]:w-[120px]'></Image>
                 </nav>
                 <div className='px-6 min-h-screen max-[486px]:px-2'>
