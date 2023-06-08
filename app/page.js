@@ -4,21 +4,63 @@ import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { RxCross2 } from 'react-icons/rx'
-import Footer from './(dashboard)/components/Footer';
+import Footer from './components/Footer';
 import { HiBars3 } from 'react-icons/hi2';
 import { MdOutlineLogout } from 'react-icons/md';
 import { ImBooks } from 'react-icons/im';
+import { useRouter } from 'next/navigation';
 
 const page = () => {
     const [showLogin, setShowLogin] = useState(false);
     const [toggle, setToggle] = useState(false);
     const toggleref = useRef(null);
+    const [userDetails, setUserDetails] = useState({
+        email: "",
+        password: ""
+    });
+    const [error, setError] = useState(false);
+    const router = useRouter();
+
+    const updateChange = (e) => {
+        const { name, value } = e.target;
+        setUserDetails((prev) => {
+            return {
+                ...prev,
+                [name]: value
+            }
+        })
+    }
 
     const handleClickOutside = (event) => {
         if (toggleref.current && !toggleref.current.contains(event.target)) {
             setToggle(false);
         }
     };
+
+    const userLogin = async (e) => {
+        e.preventDefault();
+        //login functionality
+        const res = await fetch('/api/userlogin', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userDetails)
+        });
+        const data = await res.json();
+        if (data.status) {
+            localStorage.setItem('token', JSON.stringify({ token: data.token, email: userDetails.email}));
+            setShowLogin(false);
+            router.push('/dashboard');
+        } else {
+            //show invalid credentials
+            setError(true);
+            setTimeout(() => {
+                setError(false);
+            }, 5000)
+        }
+    }
+
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
@@ -76,17 +118,20 @@ const page = () => {
                                 <RxCross2 />
                             </div>
                         </div>
-                        <div className='bg-white px-6 py-4' >
+                        <form onSubmit={userLogin} className='bg-white px-6 py-4'>
                             <label className='block text-sm text-gray-600' htmlFor="email">Email</label>
-                            <input className='block border-b-black border-b outline-none mb-4 fontsz3 headin2 w-full' type="email" id='email' name='email' required />
+                            <input value={userDetails.email} onChange={updateChange} className='block border-b-black border-b outline-none mb-4 fontsz2 headin2 w-full' type="email" id='email' name='email' required />
                             <label className='block text-sm text-gray-600' htmlFor="password">Password</label>
-                            <input className='block border-b-black border-b outline-none fontsz3 headin2 w-full' type="password" id='password' name='password' required />
+                            <input value={userDetails.password} onChange={updateChange} className='block border-b-black border-b outline-none fontsz2 headin2 w-full' type="password" id='password' name='password' required />
                             <div className='block text-right'>
                                 <Link href={'/forgotPassword'} className='fontsz3  hover:underline'>Forgot password?</Link>
                             </div>
-                            <button className='btn block w-1/3 mt-4 ml-auto'>Login</button>
+                            {
+                                error && <div className='text-red-600 fontsz3 font-semibold'>***Invalid Credentials!***</div>
+                            }
+                            <button type='submit' className='btn block w-1/3 mt-4 ml-auto'>Login</button>
+                        </form>
 
-                        </div>
                     </div>
                 }
 

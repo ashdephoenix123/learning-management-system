@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import Footer from '../(dashboard)/components/Footer';
+import Footer from '../components/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -85,7 +85,16 @@ const page = () => {
             });
 
         } else {
-            alert('User not registered!');
+            toast.error('Some error occured, User not registered!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
         }
 
     }

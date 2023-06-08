@@ -1,6 +1,7 @@
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
+import RootProvider from '../provider/RootProvider';
 import '../global.scss'
 
 export const metadata = {
@@ -9,7 +10,9 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
+    <RootProvider>
       <section>
         <Navbar />
         <main className='container1'>
@@ -22,5 +25,6 @@ export default function RootLayout({ children }) {
           </section>
         </main>
       </section>
+    </RootProvider>
   )
 }

@@ -1,8 +1,8 @@
-import Announcement from "../components/Announcement";
-import Card from "../components/Card";
-import Support from "../components/Support";
-import Todo from "../components/Todo";
-import Carousel from "../components/Carousel";
+import Announcement from "../../components/Announcement";
+import Card from "../../components/Card";
+import Support from "../../components/Support";
+import Todo from "../../components/Todo";
+import Carousel from "../../components/Carousel";
 
 export default function Home() {
   return (
