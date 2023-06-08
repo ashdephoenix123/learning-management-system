@@ -1,4 +1,3 @@
-import Footer from './(dashboard)/components/Footer'
 import './global.scss'
 import { Inter } from 'next/font/google'
 
