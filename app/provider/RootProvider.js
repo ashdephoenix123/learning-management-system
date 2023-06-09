@@ -24,11 +24,18 @@ const Provider = ({ children }) => {
                     localStorage.removeItem('token');
                     router.push('/');
                 }
+                if(data.status && (pathname === '/' || pathname === '/register' || pathname === '/forgotPassword')){
+                    router.push('/dashboard');
+                }
             }
             checkUser();
         } else {
             //redirect to login
-            router.push('/');
+            if(pathname === '/register' || pathname === '/forgotPassword'){
+                
+            } else {
+                router.push('/');
+            }
         }
     }, [pathname])
     return (

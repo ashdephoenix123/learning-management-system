@@ -120,16 +120,16 @@ const page = () => {
                         </div>
                         <form onSubmit={userLogin} className='bg-white px-6 py-4'>
                             <label className='block text-sm text-gray-600' htmlFor="email">Email</label>
-                            <input value={userDetails.email} onChange={updateChange} className='block border-b-black border-b outline-none mb-4 fontsz2 headin2 w-full' type="email" id='email' name='email' required />
+                            <input value={userDetails.email} onChange={updateChange} className='block border-b-black border-b outline-none mb-4 text-sm headin2 w-full text-gray-700' type="email" id='email' name='email' required />
                             <label className='block text-sm text-gray-600' htmlFor="password">Password</label>
-                            <input value={userDetails.password} onChange={updateChange} className='block border-b-black border-b outline-none fontsz2 headin2 w-full' type="password" id='password' name='password' required />
+                            <input value={userDetails.password} onChange={updateChange} className='block border-b-black border-b outline-none text-sm headin2 w-full text-gray-700' type="password" id='password' name='password' required />
                             <div className='block text-right'>
                                 <Link href={'/forgotPassword'} className='fontsz3  hover:underline'>Forgot password?</Link>
                             </div>
                             {
                                 error && <div className='text-red-600 fontsz3 font-semibold'>***Invalid Credentials!***</div>
                             }
-                            <button type='submit' className='btn block w-1/3 mt-4 ml-auto'>Login</button>
+                            <button type='submit' className='btn block w-1/3 mt-4 ml-auto outline-none focus:bg-blue-600'>Login</button>
                         </form>
 
                     </div>
@@ -137,22 +137,22 @@ const page = () => {
 
                 <div className='layoutCard px-16 py-24 max-[412px]:px-4'>
                     <div className='flex flex-col items-center'>
-                        <Image src='/curriculum2.jpeg' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
+                        <Image src='/curriculum2.jpeg' alt='program-description' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
                         <h3 className='heading2 font-semibold mt-6 mb-1'>Innovative Curriculum</h3>
                         <p className='text-center fontsz2 font1'>Industry-driven concepts to prepare you for future careers.</p>
                     </div>
                     <div className='flex flex-col items-center'>
-                        <Image src='/friends3.jpeg' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
+                        <Image src='/friends3.jpeg' alt='program-description' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
                         <h3 className='heading2 font-semibold mt-6 mb-1'>Collaborative learning</h3>
                         <p className='text-center fontsz2 font1'>Interactions with faculty and peers for enhanced learning.</p>
                     </div>
                     <div className='flex flex-col items-center'>
-                        <Image src='/mobile.jpeg' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
+                        <Image src='/mobile.jpeg' alt='program-description' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
                         <h3 className='heading2 font-semibold mt-6 mb-1'>Communication Tools</h3>
                         <p className='text-center fontsz2 font1'>In-built chat and E-mail options to connect with faculty or admin.</p>
                     </div>
                     <div className='flex flex-col items-center'>
-                        <Image src='/progress.png' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
+                        <Image src='/progress.png' alt='program-description' width={200} height={200} className='rounded-full w-[150px] h-[150px] object-cover'></Image>
                         <h3 className='heading2 font-semibold mt-6 mb-1'>Progress-tracking</h3>
                         <p className='text-center fontsz2 font1'>Analytics section with Leaderboard and reward points.</p>
                     </div>

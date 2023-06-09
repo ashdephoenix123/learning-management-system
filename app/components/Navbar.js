@@ -15,6 +15,7 @@ import { BiSupport } from 'react-icons/bi'
 import { IoGridSharp } from 'react-icons/io5'
 import Image from 'next/image';
 import { ImBooks } from 'react-icons/im'
+import { useRouter } from 'next/navigation';
 
 
 const Navbar = () => {
@@ -25,6 +26,7 @@ const Navbar = () => {
     const ref = useRef(null)
     const searchref = useRef(null);
     const toggleref = useRef(null);
+    const router = useRouter();
 
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
@@ -55,6 +57,13 @@ const Navbar = () => {
     const submitInputForm = (e) => {
         e.preventDefault();
     }
+
+    const logout = () => {
+        localStorage.removeItem('token');
+        router.push('/');
+    }
+
+
     return (
         <>
             <nav className='shadow-md fixed container2 z-50 primary text-white'>
@@ -92,10 +101,20 @@ const Navbar = () => {
                             </li>
                             {/* <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><BiSupport size={18} /><span className='absolute top-10 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe z-20'>Help</span></li> */}
                             <li className='flex items-center cursor-pointer px-2 py-1 hoverColor1 rounded-md relative group'><Link className='flex items-center' href={'/user'}><span className='mr-1.5 hide1  text-xs block'>Akash Sarki</span><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Profile</span>
-                                <Image src={'/me2.jpg'} width={100} height={100} className='w-[30px] h-[30px] rounded-full'></Image>
+                                <Image src={'/me2.jpg'} width={100} height={100} className='w-[30px] h-[30px] rounded-full' alt='me'></Image>
 
                             </Link></li>
-                            <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><SlArrowDown size={10} /><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Dropdown</span></li>
+                            <li ref={ref} onClick={()=> {setdropdown(prev=> !prev)}} className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><SlArrowDown size={10} /><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Dropdown</span>
+                                {
+                                    dropdown &&
+                                    <div className='absolute top-10 right-0 rounded overflow-hidden'>
+                                        <div className='flex items-center text-black px-4 py-3  bg-gray-200 hover:bg-gray-300' onClick={logout}>
+                                            <MdOutlineLogout className='mr-2' />
+                                            <span>Logout</span>
+                                        </div>
+                                    </div>
+                                }
+                            </li>
                         </ul>
                     </div>
                 </div>

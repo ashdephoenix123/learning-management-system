@@ -351,3 +351,10 @@ input[type=number]::-webkit-outer-spin-button {
       transform: rotate(360deg);
     }
   }
+
+  //calendar
+  .calendar-container {
+    width: 100%;
+    // max-width: 1200px;
+    margin: 0 auto;
+  }

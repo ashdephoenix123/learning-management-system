@@ -8,7 +8,7 @@ const Carousel = () => {
     <>
       <div className="card2">
         <h2 className="heading1">Welcome</h2>
-        <Image width={500} height={500} className="w-full h-[35vh] object-cover" src='/carousel6.png'></Image>
+        <Image width={500} height={500} alt='carousel' className="w-full h-[35vh] object-cover" src='/carousel6.png'></Image>
       </div>
     </>
   )
