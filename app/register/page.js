@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const page = () => {
     const [disabled, setDisabled] = React.useState(true);
     const [courses, setCourses] = useState([]);
+    const [batch, setBatch] = useState([]);
     const [courseFee, setCourseFee] = useState(0);
     const [userDetails, setUserDetails] = useState({
         fname: '',
@@ -27,7 +28,8 @@ const page = () => {
         mothername: '',
         course: '',
         password: '',
-        cpassword: ''
+        cpassword: '',
+        batchCode: ''
     });
 
     const updateChange = (e) => {
@@ -41,8 +43,15 @@ const page = () => {
         if (name === 'course') {
             const selectedCourse = courses.filter((course) => course.coursecode === value);
             setCourseFee(selectedCourse[0].totalFee);
+            
+            //fetch available batch for selected course
+            const fetchAvailableBatch = async () => {
+                const res = await fetch('/api/batch')
+                const data = await res.json();
+                setBatch(data.batch.filter((batch) => batch.coursecode === value));
+            }
+            fetchAvailableBatch();
         }
-
     }
 
 
@@ -109,7 +118,7 @@ const page = () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email: userDetails.email, courseFee })
+            body: JSON.stringify({ email: userDetails.email, courseFee, batchCode: userDetails.batchCode })
         })
         const data = await res.json();
         if (data.created) {
@@ -143,7 +152,7 @@ const page = () => {
             rzp1.open();
 
         } else {
-            toast.error('Some error occured, Please try again later!', {
+            toast.error(data.error, {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -157,8 +166,8 @@ const page = () => {
     }
 
     useEffect(() => {
-        const { fname, lname, email, phone, address, gender, dob, fathername, mothername, course, password, cpassword, city, state, pincode } = userDetails;
-        if (!fname || !lname || !email || !phone || !address || !gender || !dob || !fathername || !mothername || !course || !password || !cpassword || password !== cpassword || password.length < 8 || phone.length !== 10 || email.includes('@') === false || pincode.length !== 6 || !city || !state) {
+        const { fname, lname, email, phone, address, gender, dob, fathername, mothername, course, password, cpassword, city, state, pincode, batchCode } = userDetails;
+        if (!fname || !lname || !email || !phone || !address || !gender || !dob || !fathername || !mothername || !course || !password || !cpassword || password !== cpassword || password.length < 8 || phone.length !== 10 || email.includes('@') === false || pincode.length !== 6 || !city || !state || !batchCode) {
             setDisabled(true);
         } else {
             setDisabled(false);
@@ -288,14 +297,28 @@ const page = () => {
                             <select name="course" value={userDetails.course} onChange={updateChange} className='fontsz2 px-2 py-1 border border-gray-600 rounded  max-[486px]:w-full overflow-hidden' required>
                                 <option value="" disabled className='max-[486px]:text-sm'>Select Course</option>
                                 {
-                                    courses.map((course) => {
-                                        return <option value={course.coursecode} className='max-[486px]:text-sm max-[486px]:w-full'>{course.name}</option>
+                                    courses.map((course, index) => {
+                                        return <option key={index} value={course.coursecode} className='max-[486px]:text-sm max-[486px]:w-full'>{course.name}</option>
                                     })
                                 }
                                 {/* <option value="mca">Masters in Computer Application</option>
                             <option value="mba">Masters in Business Administration</option> */}
                             </select>
                         </div>
+
+                        <div className='mb-2 flex justify-between items-center max-[486px]:block'>
+
+                            <label className='fontsz2 mr-2 max-[486px]:block'>Batch<span className='text-red-600'>*</span></label>
+                            <select name="batchCode" value={userDetails.batchCode} disabled={!userDetails.course} onChange={updateChange} className='disabled:cursor-not-allowed fontsz2 px-2 py-1 border border-gray-600 rounded  max-[486px]:w-full overflow-hidden' required>
+                                <option value="" disabled className='max-[486px]:text-sm'>Select Batch</option>
+                                {
+                                    batch.map((batch, index) => {
+                                        return <option key={index} value={batch.batchCode} className='max-[486px]:text-sm max-[486px]:w-full'>{batch.batchShortName}</option>
+                                    })
+                                }
+                            </select>
+                        </div>
+
                         <div className="relative flex items-center w-full my-8">
                             <div className="flex-grow border-t border-gray-400"></div>
                             <div className="flex-grow border-t border-gray-400"></div>

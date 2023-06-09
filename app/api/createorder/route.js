@@ -2,11 +2,17 @@ import { NextResponse } from "next/server"
 import connectDB from "@/app/database/connection";
 import User from "@/app/database/model/usermodel";
 import Razorpay from 'razorpay';
+import Batch from "@/app/database/model/batchmodel";
 
 export async function POST(request) {
     try {
         await connectDB();
-        const { email, courseFee } = await request.json();
+        const { email, courseFee, batchCode } = await request.json();
+
+        const findBatch = await Batch.findOne({ batchCode });
+        if(!findBatch) throw new Error('Batch not found!');
+        if(findBatch.intake === false) throw new Error('Batch is not open for intake!');
+
         const findUser = await User.findOne({ email });
         if(findUser) throw new Error('User already registered for a course!');
 

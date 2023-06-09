@@ -1,0 +1,87 @@
+[
+    {
+        "batchCode": "MCAJULY2023",
+        "batchShortName": "MCA July 2023",
+        "batchFullName": "Masters in Computer Application (MCA) November 2023",
+        "intake": false,
+        "coursecode": "MCA",
+        "announcements": [],
+        "inbox": [],
+        "semester": 1
+    },
+    {
+        "name": "Masters in Computer Applications",
+        "coursecode": "MCA",
+        "totalFee": 6000,
+        "semesters": [
+            {
+                "semester": 1,
+                "subjects": [
+                    {
+                        "subjectcode": "SEM1SUB1"
+                    },
+                    {
+                        "subjectcode": "SEM1SUB2"
+                    },
+                    {
+                        "subjectcode": "SEM1SUB3"
+                    },
+                    {
+                        "subjectcode": "SEM1SUB4"
+                    }
+                ]
+            },
+            {
+                "semester": 2,
+                "subjects": [
+                    {
+                        "subjectcode": "SEM2SUB1"
+                    },
+                    {
+                        "subjectcode": "SEM2SUB2"
+                    },
+                    {
+                        "subjectcode": "SEM2SUB3"
+                    },
+                    {
+                        "subjectcode": "SEM2SUB4"
+                    }
+                ]
+            },
+            {
+                "semester": 3,
+                "subjects": [
+                    {
+                        "subjectcode": "SEM3SUB1"
+                    },
+                    {
+                        "subjectcode": "SEM3SUB2"
+                    },
+                    {
+                        "subjectcode": "SEM3SUB3"
+                    },
+                    {
+                        "subjectcode": "SEM3SUB4"
+                    }
+                ]
+            },
+            {
+                "semester": 4,
+                "subjects": [
+                    {
+                        "subjectcode": "SEM4SUB1"
+                    },
+                    {
+                        "subjectcode": "SEM4SUB2"
+                    },
+                    {
+                        "subjectcode": "SEM4SUB3"
+                    },
+                    {
+                        "subjectcode": "SEM4SUB4"
+                    }
+                ]
+            }
+        ]
+    }
+]
