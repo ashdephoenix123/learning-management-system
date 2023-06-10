@@ -175,7 +175,7 @@ const Navbar = () => {
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/notifications'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillBell className='mr-2' size={18} />Notifications</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/calendar'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillCalendar className='mr-2' size={18} />Calendar</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/user'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><FaUserAlt className='mr-2' size={18} />Profile</span></Link></li>
-                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdOutlineLogout className='mr-2' size={18} />Log out</span></Link></li>
+                            <li onClick={logout} className='cursor-pointer hover:bg-zinc-200 border-b'><div className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdOutlineLogout className='mr-2' size={18} />Log out</span></div></li>
                         </ul>
                     </div>
                 </>
