@@ -16,7 +16,8 @@ import { IoGridSharp } from 'react-icons/io5'
 import Image from 'next/image';
 import { ImBooks } from 'react-icons/im'
 import { useRouter } from 'next/navigation';
-
+import { useRootContext } from '../provider/RootProvider';
+import _ from 'lodash';
 
 const Navbar = () => {
     const [dropdown, setdropdown] = useState(false)
@@ -27,6 +28,9 @@ const Navbar = () => {
     const searchref = useRef(null);
     const toggleref = useRef(null);
     const router = useRouter();
+    const allDetails = useRootContext();
+
+    const { userDetails: { fname, lname, image = "" } } = allDetails || { userDetails: { fname: 'Username', lname: '' } };
 
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
@@ -100,11 +104,17 @@ const Navbar = () => {
                                 <span className='absolute top-10 bg-slate-700 px-1 py-1 text-white text-xs hidden group-hover:block showMe z-20'>Search</span>
                             </li>
                             {/* <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><BiSupport size={18} /><span className='absolute top-10 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe z-20'>Help</span></li> */}
-                            <li className='flex items-center cursor-pointer px-2 py-1 hoverColor1 rounded-md relative group'><Link className='flex items-center' href={'/user'}><span className='mr-1.5 hide1  text-xs block'>Akash Sarki</span><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Profile</span>
-                                <Image src={'/me2.jpg'} width={100} height={100} className='w-[30px] h-[30px] rounded-full' alt='me'></Image>
+                            <li className='flex items-center cursor-pointer px-2 py-1 hoverColor1 rounded-md relative group'><Link className='flex items-center' href={'/user'}><span className='mr-1.5 hide1  text-xs block'>{_.capitalize(fname)} {_.capitalize(lname)}</span><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Profile</span>
+
+                                {
+                                    !image ?
+                                        <Image src={'/userImage.jpg'} width={100} height={100} className='w-[30px] h-[30px] rounded-full' alt='me'></Image>
+                                        :
+                                        <Image src={image} width={100} height={100} className='w-[30px] h-[30px] rounded-full' alt='me'></Image>
+                                }
 
                             </Link></li>
-                            <li ref={ref} onClick={()=> {setdropdown(prev=> !prev)}} className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><SlArrowDown size={10} /><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Dropdown</span>
+                            <li ref={ref} onClick={() => { setdropdown(prev => !prev) }} className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><SlArrowDown size={10} /><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Dropdown</span>
                                 {
                                     dropdown &&
                                     <div className='absolute top-10 right-0 rounded overflow-hidden'>

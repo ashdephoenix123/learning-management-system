@@ -34,7 +34,7 @@ const Todo = () => {
         }
     }, [])
     return (
-        <div className='card2 mt-4'>
+        <div className='card2 mb-4'>
             <div className='flex items-center justify-between'>
                 <h3 className='heading2'>To-do</h3>
                 <span className='rounded-full p-1 hover:bg-gray-200 cursor-pointer'>
