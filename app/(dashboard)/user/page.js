@@ -3,21 +3,77 @@
 import { useRootContext } from '@/app/provider/RootProvider'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import _ from 'lodash'
+import { FaPencilAlt } from 'react-icons/fa'
 
-const page = ({ userDetails }) => {
+const page = () => {
     const allDetails = useRootContext();
-    const { userDetails: { fname, lname, address, batchCode, city, coursecode, createdAt, dob, email, enrollmentNumber, fathername, gender, mothername, phone, pincode, state } } = allDetails || { userDetails: { fname: '', lname: '', address: '', batchCode: '', city: '', coursecode: '', createdAt: '', dob: '', email: '', enrollmentNumber: '', fathername: '', gender: '', mothername: '', phone: '', pincode: '', state: '' } };
+    const { userDetails: { fname, lname, address, batchCode, city, coursecode, createdAt, dob, email, enrollmentNumber, fathername, gender, mothername, phone, pincode, state, image='https://www.akashsarki.me/me.jpg' } } = allDetails || { userDetails: { fname: '', lname: '', address: '', batchCode: '', city: '', coursecode: '', createdAt: '', dob: '', email: '', enrollmentNumber: '', fathername: '', gender: '', mothername: '', phone: '', pincode: '', state: '', image: '' } };
     const { batchDetails: { batchFullName } } = allDetails || { batchDetails: { batchFullName: 'Batch Name' } };
+    const fileInputRef = useRef(null);
+    const [selectedFile, setSelectedFile] = useState(null);
+
+
+    const handleIconClick = () => {
+        fileInputRef.current.click();
+    };
+
+    const handleFileChange = async (event) => {
+        const file = event.target.files[0];
+        setSelectedFile(file);
+
+        await uploadFile();
+    };
+
+    const uploadFile = async () => {
+        if (!selectedFile) return;
+
+        //code for file uploads
+
+        // const formData = new FormData();
+        // formData.append('file', selectedFile);
+
+        // try {
+        //     const response = await fetch('/api/imageUpload', {
+        //         method: 'POST',
+        //         body: formData,
+        //     });
+
+        //     if (response.ok) {
+        //         // File uploaded successfully
+        //     } else {
+        //         // Handle error response
+        //         console.error('Error uploading file:', response.status);
+        //     }
+        // } catch (error) {
+        //     console.error('Error uploading file:', error);
+        // }
+    };
+
+    // useEffect(() => {
+    //     uploadFile();
+    // }, [selectedFile])
+
+
     return (
         <div className='min-h-screen card2'>
             {/* <h3 className='fontsz1'>Profile</h3> */}
             <div className='mt-2 flex items-center max-[577px]:block '>
                 {/* <p className='fontsz2'>This is your profile page.</p> */}
                 <figure className='relative w-[200px] h-[200px] max-[577px]:w-[120px] max-[577px]:h-[120px]'>
-                    <Image alt='userImage' fill className='object-cover  rounded-full' src={'/me2.jpg'}></Image>
+                    {!image ? <Image alt='userImage' fill className='object-cover border-2 rounded-full' src={'/userImage.jpg'}></Image> : <Image alt='userImage' fill className='object-cover rounded-full' src={image}></Image>}
                     <span className='absolute right-5 border-2 border-white bottom-5 inline-block w-4 h-4 rounded-full bg-green-500 max-[577px]:right-0'></span>
+                    <div className='absolute top-5 right-5 max-[577px]:top-2 max-[577px]:right-2 rounded p-0.5 bg-gray-100'>
+                        <FaPencilAlt className='cursor-pointer text-gray-600' id="fileIcon" onClick={handleIconClick} size={15} />
+                    </div>
+                    <input
+                        type="file"
+                        id="fileInput"
+                        ref={fileInputRef}
+                        className='hidden'
+                        onChange={handleFileChange}
+                    />
                 </figure>
                 <div className='ml-6 max-[577px]:ml-0 max-[577px]:mt-2'>
                     <h3 className='heading1'>{_.capitalize(fname)} {_.capitalize(lname)}</h3>
@@ -56,7 +112,7 @@ const page = ({ userDetails }) => {
                     </ul>
                 </div>
                 <div className='mb-4'>
-                    <p>To update any Information, Kindly raise a ticket through POSH Portal <Link className='underline text-blue-600' href='/posh'>here</Link>.</p>
+                    <p>To update any Information, Kindly raise a ticket through ECS Portal <Link className='underline text-blue-600' href='/support'>here</Link>.</p>
                 </div>
             </div>
 

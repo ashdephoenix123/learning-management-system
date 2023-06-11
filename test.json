@@ -18,68 +18,3240 @@
                 "semester": 1,
                 "subjects": [
                     {
-                        "subjectcode": "SEM1SUB1"
+                        "subjectcode": "MCASEM1SUB1",
+                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me",  "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM1SUB2"
+                        "subjectcode": "MCASEM1SUB2",
+                        "subjectname": "Operating System and Unix Shell Programming",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM1SUB3"
+                        "subjectcode": "MCASEM1SUB3",
+                        "subjectname": "Data Communication and Computer Networks",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM1SUB4"
-                    }
+                        "subjectcode": "MCASEM1SUB4",
+                        "subjectname": " Data Structures with Algorithms",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    },
+                    {
+                        "subjectcode": "MCASEM1SUB5",
+                        "subjectname": "Computer Organization and Architecture",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    }                    
                 ]
             },
             {
                 "semester": 2,
                 "subjects": [
                     {
-                        "subjectcode": "SEM2SUB1"
+                        "subjectcode": "MCASEM2SUB1",
+                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM2SUB2"
+                        "subjectcode": "MCASEM2SUB2",
+                        "subjectname": "Operating System and Unix Shell Programming",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM2SUB3"
+                        "subjectcode": "MCASEM2SUB3",
+                        "subjectname": "Data Communication and Computer Networks",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM2SUB4"
-                    }
+                        "subjectcode": "MCASEM2SUB4",
+                        "subjectname": " Data Structures with Algorithms",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    },
+                    {
+                        "subjectcode": "MCASEM2SUB5",
+                        "subjectname": "Computer Organization and Architecture",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    }                    
                 ]
             },
             {
                 "semester": 3,
                 "subjects": [
                     {
-                        "subjectcode": "SEM3SUB1"
+                        "subjectcode": "MCASEM3SUB1",
+                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM3SUB2"
+                        "subjectcode": "MCASEM3SUB2",
+                        "subjectname": "Operating System and Unix Shell Programming",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM3SUB3"
+                        "subjectcode": "MCASEM3SUB3",
+                        "subjectname": "Data Communication and Computer Networks",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM3SUB4"
-                    }
+                        "subjectcode": "MCASEM3SUB4",
+                        "subjectname": " Data Structures with Algorithms",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    },
+                    {
+                        "subjectcode": "MCASEM3SUB5",
+                        "subjectname": "Computer Organization and Architecture",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    }                    
                 ]
             },
             {
                 "semester": 4,
                 "subjects": [
                     {
-                        "subjectcode": "SEM4SUB1"
+                        "subjectcode": "MCASEM4SUB1",
+                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM4SUB2"
+                        "subjectcode": "MCASEM4SUB2",
+                        "subjectname": "Operating System and Unix Shell Programming",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM4SUB3"
+                        "subjectcode": "MCASEM4SUB3",
+                        "subjectname": "Data Communication and Computer Networks",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "SEM4SUB4"
-                    }
+                        "subjectcode": "MCASEM4SUB4",
+                        "subjectname": " Data Structures with Algorithms",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    },
+                    {
+                        "subjectcode": "MCASEM4SUB5",
+                        "subjectname": "Computer Organization and Architecture",
+                        "chapters": [
+                            {
+                                "chapternumber": 1,
+                                "chaptername": "Fundamentals of Logic",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "introduction",
+                                    "Basic Connectives",
+                                    "Truth Table",
+                                    "Logic Equivalence",
+                                    "the laws of logic"
+                                ]
+                            },
+                            {
+                                "chapternumber": 2,
+                                "chaptername": "Set Theory",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Sets and Subsets",
+                                    "Operations on Sets",
+                                    "Venn Diagrams",
+                                    "Cartesian Product of Sets",
+                                    "Relations",
+                                    "Functions"
+                                ]
+                            },
+                            {
+                                "chapternumber": 3,
+                                "chaptername": "Properties of the Integers",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Well-ordering principles",
+                                    "Mathematical Induction",
+                                    "The Division Algorithm",
+                                    "The Euclidean Algorithm",
+                                    "The Fundamental Theorem of Arithmetic",
+                                    "The Greatest Common Divisor",
+                                    "The Least Common Multiple"
+                                ]
+                            },
+                            {
+                                "chapternumber": 4,
+                                "chaptername": "Fundamental principles of counting",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "Introduction",
+                                    "The Sum Rule",
+                                    "The Product Rule",
+                                    "Permutations",
+                                    "Combinations",
+                                    "Binomial Coefficients"
+                                ]
+                            },
+                            {
+                                "chapternumber": 5,
+                                "chaptername": "Chapter 5",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 6,
+                                "chaptername": "Chapter 6",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 7,
+                                "chaptername": "Chapter 7",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 8,
+                                "chaptername": "Chapter 8",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 9,
+                                "chaptername": "Chapter 9",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            },
+                            {
+                                "chapternumber": 10,
+                                "chaptername": "Chapter 10",
+                                "linktopdf": "https://www.akashsarki.me",
+                                "recordedsessions": [
+                                    "https://www.akashsarki.me"
+                                ],
+                                "topics": [
+                                    "topic1",
+                                    "topic2",
+                                    "topic3",
+                                    "topic4",
+                                    "topic5"
+                                ]
+                            }
+                        ],
+                        "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
+                    }                    
                 ]
             }
         ]

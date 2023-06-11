@@ -7,12 +7,20 @@ import Todo from "../../components/Todo";
 import Carousel from "../../components/Carousel";
 import EnrollmentInfo from "@/app/components/EnrollmentInfo";
 import { useRootContext } from "@/app/provider/RootProvider";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const allDetails = useRootContext();
-  console.log(allDetails);
-  const { userDetails: { fname, lname, address, batchCode, city, coursecode, createdAt, dob, email, enrollmentNumber, fathername, gender, mothername, phone, pincode, state  } } = allDetails || { userDetails: { fname: '' , lname: '' , address: '' , batchCode: '' , city: '' , coursecode: '' , createdAt: '' , dob: '' , email: '' , enrollmentNumber: '' , fathername: '' , gender: '' , mothername: '' , phone: '' , pincode: '' , state: ''  } };
+
+  const [semesterDetails, setSemesterDetails] = useState({});
+  const { userDetails: { createdAt } } = allDetails || { userDetails: { createdAt: '' } };
   const { batchDetails: { batchFullName, semester } } = allDetails || { batchDetails: { batchFullName: 'Batch Name', semester: "semester" } };
+  const { courseDetails: { semesters } } = allDetails || { courseDetails: { semesters: [] } };
+  useEffect(() => {
+    setSemesterDetails(() => {
+      return semesters.filter((item) => item.semester === semester)[0];
+    });
+  }, [semester])
 
   return (
     <>
@@ -21,7 +29,7 @@ export default function Home() {
           <Carousel />
           <div className="card2 mt-4">
             <h2 className="heading1">Semester {semester} - {batchFullName}</h2>
-            <Card />
+            <Card subjectDetails={semesterDetails} />
           </div>
         </div>
         <div className="right">

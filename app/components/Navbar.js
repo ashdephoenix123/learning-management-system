@@ -89,7 +89,7 @@ const Navbar = () => {
                             <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><Link href={'/inbox'}><MdEmail size={18} /><span className='absolute bg-red-600 top-2 right-1 px-1 py-1 rounded-full'></span><span className='absolute top-10 bg-slate-700 px-1 py-1 text-white text-xs hidden group-hover:block showMe z-20'>Messages</span></Link></li>
                             <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><Link href={'/notifications'}><AiFillBell size={18} /><span className='text-sm absolute bg-red-600 top-2 right-1 px-1 py-1 rounded-full'></span><span className='absolute top-10 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe z-20'>Notifications</span></Link></li>
                             <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><Link href={'/calendar'}><AiFillCalendar size={18} /><span className='absolute top-10 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe z-20'>Calendar</span></Link></li>
-                            <li className='flex items-center cursor-pointer hoverColor1 px-2 py-1 rounded relative group mr-1' onClick={searchHandler}><VscSearch size={18} />
+                            <li className='flex items-center cursor-pointer hoverColor1 px-2 py-1 rounded relative group' onClick={searchHandler}><VscSearch size={18} />
                                 {search &&
                                     <>
                                         <div className='absolute top-0 right-1 flex w-[200px] fillit bg-white rounded-md z-50'>
@@ -103,7 +103,7 @@ const Navbar = () => {
                                     </>}
                                 <span className='absolute top-10 bg-slate-700 px-1 py-1 text-white text-xs hidden group-hover:block showMe z-20'>Search</span>
                             </li>
-                            {/* <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group'><BiSupport size={18} /><span className='absolute top-10 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe z-20'>Help</span></li> */}
+                            <li className='flex items-center cursor-pointer hide2 hoverColor1 px-2 py-1 rounded relative group mr-1'><Link href={'/support'}><BiSupport size={18} /><span className='absolute top-10 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe z-20'>Help</span></Link></li>
                             <li className='flex items-center cursor-pointer px-2 py-1 hoverColor1 rounded-md relative group'><Link className='flex items-center' href={'/user'}><span className='mr-1.5 hide1  text-xs block'>{_.capitalize(fname)} {_.capitalize(lname)}</span><span className='absolute top-10 right-0 bg-slate-700 px-1 py-1 text-white  text-xs hidden group-hover:block showMe'>Profile</span>
 
                                 {
@@ -135,7 +135,7 @@ const Navbar = () => {
                         <ul>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><AiFillHome className='mr-2' size={18} />Home</span></Link></li>
                             <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
-                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/dashboard'} className='w-full flex items-center justify-between'>
+                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/semesters'} className='w-full flex items-center justify-between'>
                                     <span className='p-4 w-full text-sm tracking-wide flex items-center'>
                                         <BsBoxes className='mr-2' size={18} />
                                         Semesters
@@ -147,7 +147,7 @@ const Navbar = () => {
                             </li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><IoGridSharp className='mr-2' size={18} />Catalogue</span></Link></li>
                             <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
-                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/dashboard'} className='w-full flex items-center justify-between'>
+                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/users'} className='w-full flex items-center justify-between'>
                                     <span className='p-4 w-full text-sm tracking-wide flex items-center'>
                                         <FaUserAlt className='mr-2' size={18} />
                                         Users
@@ -158,7 +158,7 @@ const Navbar = () => {
                                 </div>
                             </li>
                             <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
-                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/dashboard'} className='w-full flex items-center justify-between'>
+                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/resources'} className='w-full flex items-center justify-between'>
                                     <span className='p-4 w-full text-sm tracking-wide flex items-center'>
                                         <ImBooks className='mr-2' size={18} />
                                         Resources
@@ -170,7 +170,7 @@ const Navbar = () => {
                             </li>
 
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer bg-zinc-300 border-b'><span className='p-4 w-full inline-block text-sm tracking-wide mr-1.5 font-semibold'>Others</span></li>
-                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><BiSupport className='mr-2' size={18} />Help</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/support'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><BiSupport className='mr-2' size={18} />Help</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/inbox'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdEmail className='mr-2' size={18} />Inbox</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/notifications'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillBell className='mr-2' size={18} />Notifications</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/calendar'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillCalendar className='mr-2' size={18} />Calendar</span></Link></li>

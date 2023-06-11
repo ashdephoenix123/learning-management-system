@@ -221,7 +221,7 @@ body {
 .project-lists {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    align-items: start;
+    // align-items: start;
     gap: .75rem;
 
     .card {
