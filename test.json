@@ -1,29 +1,29 @@
 [
     {
-        "batchCode": "MCAJULY2023",
-        "batchShortName": "MCA July 2023",
-        "batchFullName": "Masters in Computer Application (MCA) November 2023",
+        "batchCode": "MBAJULY2023",
+        "batchShortName": "MBA July 2023",
+        "batchFullName": "Masters in Computer Application (MBA) November 2023",
         "intake": false,
-        "coursecode": "MCA",
+        "coursecode": "MBA",
         "announcements": [],
         "inbox": [],
         "semester": 1
     },
     {
-        "name": "Masters in Computer Applications",
-        "coursecode": "MCA",
-        "totalFee": 6000,
+        "name": "Masters in Business Administration",
+        "coursecode": "MBA",
+        "totalFee": 7000,
         "semesters": [
             {
                 "semester": 1,
                 "subjects": [
                     {
-                        "subjectcode": "MCASEM1SUB1",
-                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "subjectcode": "MBASEM1SUB1",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -38,10 +38,11 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
-                                    "https://www.akashsarki.me",  "https://www.akashsarki.me"
+                                    "https://www.akashsarki.me",
+                                    "https://www.akashsarki.me"
                                 ],
                                 "topics": [
                                     "Sets and Subsets",
@@ -54,7 +55,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -71,7 +72,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -87,7 +88,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -102,7 +103,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -117,7 +118,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -132,7 +133,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -147,7 +148,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -162,7 +163,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -179,12 +180,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM1SUB2",
-                        "subjectname": "Operating System and Unix Shell Programming",
+                        "subjectcode": "MBASEM1SUB2",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -199,7 +200,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -215,7 +216,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -232,7 +233,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -248,7 +249,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -263,7 +264,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -278,7 +279,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -293,7 +294,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -308,7 +309,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -323,7 +324,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -340,12 +341,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM1SUB3",
-                        "subjectname": "Data Communication and Computer Networks",
+                        "subjectcode": "MBASEM1SUB3",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -360,7 +361,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -376,7 +377,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -393,7 +394,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -409,7 +410,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -424,7 +425,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -439,7 +440,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -454,7 +455,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -469,7 +470,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -484,7 +485,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -501,12 +502,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM1SUB4",
-                        "subjectname": " Data Structures with Algorithms",
+                        "subjectcode": "MBASEM1SUB4",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -521,7 +522,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -537,7 +538,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -554,7 +555,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -570,7 +571,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -585,7 +586,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -600,7 +601,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -615,7 +616,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -630,7 +631,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -645,7 +646,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -662,12 +663,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM1SUB5",
-                        "subjectname": "Computer Organization and Architecture",
+                        "subjectcode": "MBASEM1SUB5",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -682,7 +683,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -698,7 +699,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -715,7 +716,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -731,7 +732,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -746,7 +747,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -761,7 +762,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -776,7 +777,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -791,7 +792,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -806,7 +807,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -821,19 +822,19 @@
                             }
                         ],
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
-                    }                    
+                    }
                 ]
             },
             {
                 "semester": 2,
                 "subjects": [
                     {
-                        "subjectcode": "MCASEM2SUB1",
-                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "subjectcode": "MBASEM2SUB1",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -848,7 +849,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -864,7 +865,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -881,7 +882,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -897,7 +898,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -912,7 +913,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -927,7 +928,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -942,7 +943,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -957,7 +958,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -972,7 +973,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -989,12 +990,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM2SUB2",
-                        "subjectname": "Operating System and Unix Shell Programming",
+                        "subjectcode": "MBASEM2SUB2",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1009,7 +1010,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1025,7 +1026,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1042,7 +1043,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1058,7 +1059,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1073,7 +1074,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1088,7 +1089,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1103,7 +1104,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1118,7 +1119,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1133,7 +1134,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1150,12 +1151,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM2SUB3",
-                        "subjectname": "Data Communication and Computer Networks",
+                        "subjectcode": "MBASEM2SUB3",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1170,7 +1171,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1186,7 +1187,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1203,7 +1204,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1219,7 +1220,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1234,7 +1235,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1249,7 +1250,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1264,7 +1265,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1279,7 +1280,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1294,7 +1295,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1311,12 +1312,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM2SUB4",
-                        "subjectname": " Data Structures with Algorithms",
+                        "subjectcode": "MBASEM2SUB4",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1331,7 +1332,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1347,7 +1348,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1364,7 +1365,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1380,7 +1381,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1395,7 +1396,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1410,7 +1411,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1425,7 +1426,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1440,7 +1441,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1455,7 +1456,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1472,12 +1473,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM2SUB5",
-                        "subjectname": "Computer Organization and Architecture",
+                        "subjectcode": "MBASEM2SUB5",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1492,7 +1493,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1508,7 +1509,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1525,7 +1526,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1541,7 +1542,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1556,7 +1557,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1571,7 +1572,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1586,7 +1587,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1601,7 +1602,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1616,7 +1617,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1631,19 +1632,19 @@
                             }
                         ],
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
-                    }                    
+                    }
                 ]
             },
             {
                 "semester": 3,
                 "subjects": [
                     {
-                        "subjectcode": "MCASEM3SUB1",
-                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "subjectcode": "MBASEM3SUB1",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1658,7 +1659,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1674,7 +1675,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1691,7 +1692,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1707,7 +1708,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1722,7 +1723,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1737,7 +1738,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1752,7 +1753,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1767,7 +1768,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1782,7 +1783,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1799,12 +1800,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM3SUB2",
-                        "subjectname": "Operating System and Unix Shell Programming",
+                        "subjectcode": "MBASEM3SUB2",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1819,7 +1820,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1835,7 +1836,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1852,7 +1853,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1868,7 +1869,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1883,7 +1884,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1898,7 +1899,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1913,7 +1914,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1928,7 +1929,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1943,7 +1944,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1960,12 +1961,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM3SUB3",
-                        "subjectname": "Data Communication and Computer Networks",
+                        "subjectcode": "MBASEM3SUB3",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1980,7 +1981,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -1996,7 +1997,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2013,7 +2014,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2029,7 +2030,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2044,7 +2045,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2059,7 +2060,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2074,7 +2075,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2089,7 +2090,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2104,7 +2105,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2121,12 +2122,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM3SUB4",
-                        "subjectname": " Data Structures with Algorithms",
+                        "subjectcode": "MBASEM3SUB4",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2141,7 +2142,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2157,7 +2158,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2174,7 +2175,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2190,7 +2191,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2205,7 +2206,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2220,7 +2221,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2235,7 +2236,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2250,7 +2251,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2265,7 +2266,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2282,12 +2283,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM3SUB5",
-                        "subjectname": "Computer Organization and Architecture",
+                        "subjectcode": "MBASEM3SUB5",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2302,7 +2303,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2318,7 +2319,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2335,7 +2336,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2351,7 +2352,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2366,7 +2367,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2381,7 +2382,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2396,7 +2397,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2411,7 +2412,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2426,7 +2427,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2441,19 +2442,19 @@
                             }
                         ],
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
-                    }                    
+                    }
                 ]
             },
             {
                 "semester": 4,
                 "subjects": [
                     {
-                        "subjectcode": "MCASEM4SUB1",
-                        "subjectname": "Mathematical Foundation for Computer Application",
+                        "subjectcode": "MBASEM4SUB1",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2468,7 +2469,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2484,7 +2485,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2501,7 +2502,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2517,7 +2518,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2532,7 +2533,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2547,7 +2548,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2562,7 +2563,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2577,7 +2578,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2592,7 +2593,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2609,12 +2610,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM4SUB2",
-                        "subjectname": "Operating System and Unix Shell Programming",
+                        "subjectcode": "MBASEM4SUB2",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2629,7 +2630,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2645,7 +2646,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2662,7 +2663,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2678,7 +2679,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2693,7 +2694,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2708,7 +2709,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2723,7 +2724,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2738,7 +2739,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2753,7 +2754,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2770,12 +2771,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM4SUB3",
-                        "subjectname": "Data Communication and Computer Networks",
+                        "subjectcode": "MBASEM4SUB3",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2790,7 +2791,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2806,7 +2807,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2823,7 +2824,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2839,7 +2840,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2854,7 +2855,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2869,7 +2870,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2884,7 +2885,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2899,7 +2900,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2914,7 +2915,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2931,12 +2932,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM4SUB4",
-                        "subjectname": " Data Structures with Algorithms",
+                        "subjectcode": "MBASEM4SUB4",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2951,7 +2952,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2967,7 +2968,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -2984,7 +2985,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3000,7 +3001,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3015,7 +3016,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3030,7 +3031,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3045,7 +3046,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3060,7 +3061,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3075,7 +3076,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3092,12 +3093,12 @@
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
                     },
                     {
-                        "subjectcode": "MCASEM4SUB5",
-                        "subjectname": "Computer Organization and Architecture",
+                        "subjectcode": "MBASEM4SUB5",
+                        "subjectname": "MBA Subject Name",
                         "chapters": [
                             {
                                 "chapternumber": 1,
-                                "chaptername": "Fundamentals of Logic",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3112,7 +3113,7 @@
                             },
                             {
                                 "chapternumber": 2,
-                                "chaptername": "Set Theory",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3128,7 +3129,7 @@
                             },
                             {
                                 "chapternumber": 3,
-                                "chaptername": "Properties of the Integers",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3145,7 +3146,7 @@
                             },
                             {
                                 "chapternumber": 4,
-                                "chaptername": "Fundamental principles of counting",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3161,7 +3162,7 @@
                             },
                             {
                                 "chapternumber": 5,
-                                "chaptername": "Chapter 5",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3176,7 +3177,7 @@
                             },
                             {
                                 "chapternumber": 6,
-                                "chaptername": "Chapter 6",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3191,7 +3192,7 @@
                             },
                             {
                                 "chapternumber": 7,
-                                "chaptername": "Chapter 7",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3206,7 +3207,7 @@
                             },
                             {
                                 "chapternumber": 8,
-                                "chaptername": "Chapter 8",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3221,7 +3222,7 @@
                             },
                             {
                                 "chapternumber": 9,
-                                "chaptername": "Chapter 9",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3236,7 +3237,7 @@
                             },
                             {
                                 "chapternumber": 10,
-                                "chaptername": "Chapter 10",
+                                "chaptername": "MBA Chapter Name",
                                 "linktopdf": "https://www.akashsarki.me",
                                 "recordedsessions": [
                                     "https://www.akashsarki.me"
@@ -3251,9 +3252,11 @@
                             }
                         ],
                         "subjectimage": "https://anonymousuniversity.vercel.app/4.jpg"
-                    }                    
+                    }
                 ]
             }
         ]
     }
 ]
+
+

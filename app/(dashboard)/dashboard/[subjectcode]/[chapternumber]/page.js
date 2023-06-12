@@ -4,36 +4,33 @@ import React from 'react'
 import { MdDownloadForOffline } from 'react-icons/md'
 import _ from 'lodash'
 
-async function getData(subjectcode) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`)
+async function getData(chapternumber) {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { cache: 'no-store' })
     const data = await res.json()
 
-    const AllChapters = data.courses[0].semesters.filter((item) => {
-        return item.subjects.filter((item2) => {
-            return item2.subjectcode === subjectcode
-        }).length > 0
+    const chaptersByNumber = {}
+
+    data.courses.forEach((course) => {
+        course.semesters.forEach((semester) => {
+            semester.subjects.forEach((subject) => {
+                subject.chapters.forEach((chapter) => {
+                    chaptersByNumber[chapter.chapternumber] = chapter
+                })
+            })
+        })
     })
 
-    const thatSubject = AllChapters[0].subjects.filter((item) => {
-        return item.subjectcode === subjectcode
-    })
+    const currentChapter = chaptersByNumber[Number(chapternumber)]
 
-
-    // Recommendation: handle errors
-    if (!res.ok) {
-        // This will activate the closest `error.js` Error Boundary
-        throw new Error('Failed to fetch data')
+    if (!currentChapter) {
+        throw new Error('Chapter not found')
     }
 
-    return thatSubject[0];
+    return currentChapter
 }
 
-const page = async ({ params }) => {
-    const data = await getData(params.subjectcode)
-
-    const currentChapter = data.chapters.filter((chapter) => {
-        return chapter.chapternumber === Number(params.chapternumber)
-    })[0];
+const Page = async ({ params }) => {
+    const currentChapter = await getData(params.chapternumber)
 
     return (
         <>
@@ -47,9 +44,9 @@ const page = async ({ params }) => {
                     <h3 className='heading2 italic inline-block bg-yellow-400 p-1 mb-2'>Topics Covered:</h3>
                     <ul>
                         {
-                            currentChapter.topics.map((item, index) => {
-                                return <li key={index} className='heading3 text-sm'>&bull; &nbsp;{_.capitalize(item)}</li>
-                            })
+                            currentChapter.topics.map((item, index) => (
+                                <li key={index} className='heading3 text-sm'>&bull; &nbsp;{_.capitalize(item)}</li>
+                            ))
                         }
                     </ul>
                 </div>
@@ -58,4 +55,4 @@ const page = async ({ params }) => {
     )
 }
 
-export default page
+export default Page

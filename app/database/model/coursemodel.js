@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const chapters = new mongoose.Schema({
-    chapternumber: { type: Number, required: true, unique: true},
+    chapternumber: { type: Number, required: true},
     chaptername: { type: String, required: true },
     topics: {
         type: [String],
@@ -23,7 +23,7 @@ const subjects = new mongoose.Schema({
 })
 
 const semesters = new mongoose.Schema({
-    semester: { type: Number, required: true, unique: true },
+    semester: { type: Number, required: true },
     subjects: [subjects],
 })
 
