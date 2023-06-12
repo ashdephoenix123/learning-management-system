@@ -31,13 +31,12 @@ const page = () => {
     return (
         <div className='min-h-screen card2'>
             <h3 className='heading1'>Batchmates</h3>
+
             {
                 loading ? <Loading />
                     :
 
-                    allBatchUsers?.map((eachUser, index) => {
-                        return <UserCard key={index} student={eachUser} />
-                    })
+                    allBatchUsers && <UserCard students={allBatchUsers} />
 
             }
         </div>
