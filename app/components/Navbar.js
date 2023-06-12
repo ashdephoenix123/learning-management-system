@@ -8,13 +8,11 @@ import { BsBoxes } from 'react-icons/bs'
 import { HiBars3 } from 'react-icons/hi2'
 import { RxCross2 } from 'react-icons/rx'
 import { FaUserAlt } from 'react-icons/fa'
-import { SlArrowDown, SlArrowUp } from 'react-icons/sl'
+import { SlArrowDown } from 'react-icons/sl'
 import { MdEmail } from 'react-icons/md'
 import { AiFillBell, AiFillCalendar, AiFillHome } from 'react-icons/ai'
 import { BiSupport } from 'react-icons/bi'
-import { IoGridSharp } from 'react-icons/io5'
 import Image from 'next/image';
-import { ImBooks } from 'react-icons/im'
 import { useRouter } from 'next/navigation';
 import { useRootContext } from '../provider/RootProvider';
 import _ from 'lodash';
@@ -31,6 +29,7 @@ const Navbar = () => {
     const allDetails = useRootContext();
 
     const { userDetails: { fname, lname, image = "" } } = allDetails || { userDetails: { fname: 'Username', lname: '' } };
+    const { batchDetails: { coursecode } } = allDetails || { batchDetails: { coursecode: '' } }
 
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
@@ -134,8 +133,10 @@ const Navbar = () => {
                     <div className='fixed top-11 w-full h-fit bg1 z-50 border border-b-4 border-b-zinc-300' ref={toggleref}>
                         <ul>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><AiFillHome className='mr-2' size={18} />Home</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
-                                <Link onClick={() => { setToggle(prev => !prev) }} href={'/semesters'} className='w-full flex items-center justify-between'>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={`/${coursecode}/semesters`} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><BsBoxes className='mr-2' size={18} />Semesters</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/users'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><FaUserAlt className='mr-2' size={18} />Users</span></Link></li>
+                            {/* <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'> */}
+                            {/* <Link onClick={() => { setToggle(prev => !prev) }} href={'/semesters'} className='w-full flex items-center justify-between'>
                                     <span className='p-4 w-full text-sm tracking-wide flex items-center'>
                                         <BsBoxes className='mr-2' size={18} />
                                         Semesters
@@ -144,9 +145,9 @@ const Navbar = () => {
                                 <div onClick={() => { setArrow((prev) => !prev) }} className='p-5'>
                                     {arrow ? <SlArrowDown size={12} className='h-full w-full' /> : <SlArrowUp size={12} className='h-full w-full' />}
                                 </div>
-                            </li>
-                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><IoGridSharp className='mr-2' size={18} />Catalogue</span></Link></li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
+                            </li> */}
+                            {/* <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><IoGridSharp className='mr-2' size={18} />Catalogue</span></Link></li> */}
+                            {/* <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
                                 <Link onClick={() => { setToggle(prev => !prev) }} href={'/users'} className='w-full flex items-center justify-between'>
                                     <span className='p-4 w-full text-sm tracking-wide flex items-center'>
                                         <FaUserAlt className='mr-2' size={18} />
@@ -156,8 +157,8 @@ const Navbar = () => {
                                 <div onClick={() => { setArrow((prev) => !prev) }} className='p-5'>
                                     {arrow ? <SlArrowDown size={12} className='h-full w-full' /> : <SlArrowUp size={12} className='h-full w-full' />}
                                 </div>
-                            </li>
-                            <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
+                            </li> */}
+                            {/* <li className='cursor-pointer hover:bg-zinc-200 border-b flex items-center justify-between'>
                                 <Link onClick={() => { setToggle(prev => !prev) }} href={'/resources'} className='w-full flex items-center justify-between'>
                                     <span className='p-4 w-full text-sm tracking-wide flex items-center'>
                                         <ImBooks className='mr-2' size={18} />
@@ -167,9 +168,9 @@ const Navbar = () => {
                                 <div onClick={() => { setArrow((prev) => !prev) }} className='p-5'>
                                     {arrow ? <SlArrowDown size={12} className='h-full w-full' /> : <SlArrowUp size={12} className='h-full w-full' />}
                                 </div>
-                            </li>
+                            </li> */}
 
-                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer bg-zinc-300 border-b'><span className='p-4 w-full inline-block text-sm tracking-wide mr-1.5 font-semibold'>Others</span></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='bg-zinc-300 border-b'><span className='p-4 w-full inline-block text-sm tracking-wide mr-1.5 font-semibold'>Others</span></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/support'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><BiSupport className='mr-2' size={18} />Help</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/inbox'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdEmail className='mr-2' size={18} />Inbox</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/notifications'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillBell className='mr-2' size={18} />Notifications</span></Link></li>

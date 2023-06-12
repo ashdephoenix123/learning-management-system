@@ -5,10 +5,13 @@ import { useRootContext } from '@/app/provider/RootProvider';
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'next/navigation'
+
 
 const page = async () => {
     const allDetails = useRootContext();
     const [otherSemesters, setOtherSemesters] = useState([])
+    const {coursecode} = useParams();    
 
     const { batchDetails: { semester } } = allDetails || { batchDetails: { semester: null } };
     const { courseDetails: { semesters } } = allDetails || { courseDetails: { semesters: [] } };
@@ -28,7 +31,7 @@ const page = async () => {
 
                 {
                     otherSemesters.map((item) => {
-                        return <SemesterCard key={item.semester} item={item} />
+                        return <SemesterCard key={item.semester} item={item} coursecode={coursecode} />
                     })
                 }
 

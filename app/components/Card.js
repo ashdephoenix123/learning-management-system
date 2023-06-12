@@ -58,7 +58,7 @@ const Card = ({ subjectDetails }) => {
                     })
                 }
 
-                <Link href='/' className="card font1">
+                {/* <Link href='/' className="card font1">
                     <figure className="card-figure relative h-[15rem] w-full">
                         <Image className="card-img" src="/12.jpg" alt="proj9" fill></Image>
                     </figure>
@@ -68,7 +68,7 @@ const Card = ({ subjectDetails }) => {
                         <p className='mb-2 text-gray-200'>When: 1 Apr - 31 Dec 2023</p>
                         <p className='text-right fontsz3 text-gray-200'>1 lesson</p>
                     </div>
-                </Link>
+                </Link> */}
             </main>
         </>
     )

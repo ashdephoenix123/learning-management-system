@@ -2,10 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const SemesterCard = ({ item }) => {
+const SemesterCard = ({ item, coursecode }) => {
   const { semester, subjects } = item;
+
   return (
-    <Link href={`/semesters/${semester}`} className="card font1">
+    <Link href={`${coursecode}/semesters/${semester}`} className="card font1">
       <figure className="card-figure relative h-[10rem] w-full">
         <Image className="card-img" src="/15.jpg" alt="proj9" fill></Image>
       </figure>
