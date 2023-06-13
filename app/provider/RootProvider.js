@@ -28,6 +28,7 @@ const Provider = ({ children }) => {
                     },
                     body: JSON.stringify(token)
                 });
+                setProgress(40)
                 const data = await res.json();
                 setProgress(100)
                 if (!data.status) {
@@ -54,19 +55,12 @@ const Provider = ({ children }) => {
         }
     }, [pathname]);
 
-    // useEffect(() => {
-    //     if (allDetails !== null && Object.keys(allDetails).length > 0) {
-    //         router.push('/dashboard');
-    //     }
-    // }, [allDetails]);
-
     return (
         <RootContextProvider.Provider value={allDetails}>
             <LoadingBar
-                color='#0080ff'
+                color='#fff'
                 progress={progress}
                 onLoaderFinished={() => setProgress(0)}
-                height={3}
             />
             {children}
         </RootContextProvider.Provider>

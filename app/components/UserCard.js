@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import _ from 'lodash'
 
 const UserCard = ({ students }) => {
 
@@ -15,7 +16,7 @@ const UserCard = ({ students }) => {
                                 <Image className="card-img object-cover" src="/me2.jpg" alt="proj9" fill></Image>
                             </figure>
                             <div className='py-2'>
-                                <p className='text-center text-sm'>{eachStudent.fname} {eachStudent.lname}</p>
+                                <p className='text-center text-sm'>{_.capitalize(eachStudent.fname)} {_.capitalize(eachStudent.lname)}</p>
                             </div>
                         </div>
                     })
