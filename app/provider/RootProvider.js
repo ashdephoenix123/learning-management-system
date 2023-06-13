@@ -16,7 +16,7 @@ const Provider = ({ children }) => {
 
     useEffect(() => {
         const token = JSON.parse(localStorage.getItem('token'));
-        setProgress(100)
+        setProgress(10)
         if (token) {
             //redirect to dashboard
             const checkUser = async () => {
