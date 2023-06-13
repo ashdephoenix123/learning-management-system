@@ -2,6 +2,8 @@
 
 import { useRouter, usePathname } from 'next/navigation';
 import React, { createContext, useContext, useEffect, useState } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+
 
 export const RootContextProvider = createContext();
 
@@ -9,12 +11,16 @@ const Provider = ({ children }) => {
     const router = useRouter();
     const pathname = usePathname();
     const [allDetails, setAllDetails] = useState(null);
+    const [progress, setProgress] = useState(0)
+
 
     useEffect(() => {
         const token = JSON.parse(localStorage.getItem('token'));
+        setProgress(100)
         if (token) {
             //redirect to dashboard
             const checkUser = async () => {
+                setProgress(20)
                 const res = await fetch('/api/checkUser', {
                     method: 'POST',
                     headers: {
@@ -23,6 +29,7 @@ const Provider = ({ children }) => {
                     body: JSON.stringify(token)
                 });
                 const data = await res.json();
+                setProgress(100)
                 if (!data.status) {
                     localStorage.removeItem('token');
                     router.push('/');
@@ -30,13 +37,14 @@ const Provider = ({ children }) => {
                 if (data.status) {
                     //fetch user info, batch info & course details and save it in context API
                     setAllDetails(data.allDetails);
-                    if(pathname === '/' || pathname === '/register' || pathname === '/forgotPassword') {
+                    if (pathname === '/' || pathname === '/register' || pathname === '/forgotPassword') {
                         router.push('/dashboard');
                     }
                 }
             }
             checkUser();
         } else {
+            setProgress(100)
             //redirect to login
             if (pathname === '/register' || pathname === '/forgotPassword') {
 
@@ -54,6 +62,12 @@ const Provider = ({ children }) => {
 
     return (
         <RootContextProvider.Provider value={allDetails}>
+            <LoadingBar
+                color='#0080ff'
+                progress={progress}
+                onLoaderFinished={() => setProgress(0)}
+                height={3}
+            />
             {children}
         </RootContextProvider.Provider>
     )

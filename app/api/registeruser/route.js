@@ -214,7 +214,7 @@ export async function POST(request) {
   </html>`
         };
 
-        const result = await transporter.sendMail(mailOptions);
+        await transporter.sendMail(mailOptions);
         //end mail
 
         return NextResponse.json({ registered: true })
