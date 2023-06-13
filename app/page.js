@@ -9,6 +9,7 @@ import { HiBars3 } from 'react-icons/hi2';
 import { MdOutlineLogout } from 'react-icons/md';
 import { ImBooks } from 'react-icons/im';
 import { useRouter } from 'next/navigation';
+import Loading from './components/loading';
 
 const page = () => {
     const [showLogin, setShowLogin] = useState(false);
@@ -20,6 +21,7 @@ const page = () => {
     });
     const [error, setError] = useState(false);
     const router = useRouter();
+    const [loader, setLoader] = useState(false)
 
     const updateChange = (e) => {
         const { name, value } = e.target;
@@ -39,6 +41,7 @@ const page = () => {
 
     const userLogin = async (e) => {
         e.preventDefault();
+        setLoader(true)
         //login functionality
         const res = await fetch('/api/userlogin', {
             method: 'POST',
@@ -49,12 +52,13 @@ const page = () => {
         });
         const data = await res.json();
         if (data.status) {
-            localStorage.setItem('token', JSON.stringify({ token: data.token, email: userDetails.email}));
-            setShowLogin(false);
+            localStorage.setItem('token', JSON.stringify({ token: data.token, email: userDetails.email }));
+            // setShowLogin(false);
             router.push('/dashboard');
         } else {
             //show invalid credentials
             setError(true);
+            setLoader(false)
             setTimeout(() => {
                 setError(false);
             }, 5000)
@@ -107,7 +111,6 @@ const page = () => {
                     </h1>
                 </div>
 
-
                 {
                     showLogin &&
 
@@ -129,7 +132,7 @@ const page = () => {
                             {
                                 error && <div className='text-red-600 fontsz3 font-semibold'>***Invalid Credentials!***</div>
                             }
-                            <button type='submit' className='btn block w-1/3 mt-4 ml-auto outline-none focus:bg-blue-600'>Login</button>
+                            <button type='submit' className='btn block w-1/3 mt-4 ml-auto outline-none focus:bg-blue-600'>{loader ? <Loading /> : 'Login'}</button>
                         </form>
 
                     </div>
@@ -158,6 +161,7 @@ const page = () => {
                     </div>
 
                 </div>
+                <Loading />
                 <Footer />
             </section>
         </>

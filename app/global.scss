@@ -147,7 +147,7 @@ body {
     }
 }
 
-.layoutCard{
+.layoutCard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
@@ -347,12 +347,12 @@ body {
 }
 
 //input number
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0; 
+    margin: 0;
 }
 
 //loading css
@@ -361,9 +361,9 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     width: 80px;
     height: 80px;
-  }
-  
-  .lds-ring div {
+}
+
+.lds-ring div {
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -374,38 +374,51 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: var(--text2) transparent transparent transparent;
-  }
-  
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
 
-  //calendar
-  .calendar-container {
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.lds-ring2{
+    height: 24px;
+    display: flex;
+    width: 24px;
+    margin: auto;
+}
+.lds-ring2 div{
+    height: 10px;
+    width: 10px;
+    border: 8px solid #fff;
+    border-color: #fff transparent transparent transparent;
+}
+
+//calendar
+.calendar-container {
     width: 100%;
     // max-width: 1200px;
     margin: 0 auto;
-  }
+}
 
-  //cursor
-  .no-cursor{
+//cursor
+.no-cursor {
     cursor: default !important;
-  }
+}
