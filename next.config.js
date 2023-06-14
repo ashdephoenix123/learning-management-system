@@ -12,6 +12,11 @@ const nextConfig = {
                 hostname: 'anonymousuniversity.vercel.app',
                 pathname: '/**',
             },
+            {
+                protocol: 'http',
+                hostname: 'localhost:3000',
+                pathname: '/**',
+            }
             
         ]
     }

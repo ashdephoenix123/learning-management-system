@@ -56,6 +56,7 @@ const page = () => {
             // setShowLogin(false);
             router.push('/dashboard');
         } else {
+            console.log(data.error)
             //show invalid credentials
             setError(true);
             setLoader(false)

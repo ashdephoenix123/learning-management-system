@@ -13,7 +13,6 @@ const Provider = ({ children }) => {
     const [allDetails, setAllDetails] = useState(null);
     const [progress, setProgress] = useState(0)
 
-
     useEffect(() => {
         const token = JSON.parse(localStorage.getItem('token'));
         setProgress(10)
@@ -54,6 +53,7 @@ const Provider = ({ children }) => {
             }
         }
     }, [pathname]);
+
 
     return (
         <RootContextProvider.Provider value={allDetails}>

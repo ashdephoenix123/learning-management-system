@@ -9,6 +9,7 @@ export async function POST(request) {
         const { email, password } = await request.json();
         await connectDB();
         const findUser = await User.findOne({ email });
+        console.log(findUser)
         if (!findUser) throw new Error("User not found!");
 
         const bytes = CryptoJS.AES.decrypt(findUser.password, process.env.CRYPTO_SECRET);

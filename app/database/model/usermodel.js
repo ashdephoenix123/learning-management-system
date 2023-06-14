@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
     status: { type: String, required: true, default: "Pending" },
     orderID: { type: String, required: true },
     batchCode: { type: String, required: true },
-    image: { data: Buffer, contentType: String }
+    image: { data: String }
 }, { timestamps: true });
 
 userSchema.pre('save', async function (next) {

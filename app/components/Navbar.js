@@ -108,7 +108,7 @@ const Navbar = () => {
                                     !image ?
                                         <Image src={'/userImage.jpg'} width={100} height={100} className='w-[30px] h-[30px] rounded-full' alt='me'></Image>
                                         :
-                                        <Image src={image} width={100} height={100} className='w-[30px] h-[30px] rounded-full' alt='me'></Image>
+                                        <Image src={image} width={100} height={100} className='w-[30px] h-[30px] rounded-full object-cover' alt='me'></Image>
                                 }
 
                             </Link></li>

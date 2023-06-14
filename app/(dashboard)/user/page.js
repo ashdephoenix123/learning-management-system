@@ -9,51 +9,41 @@ import { FaPencilAlt } from 'react-icons/fa'
 
 const page = () => {
     const allDetails = useRootContext();
-    const { userDetails: { fname, lname, address, batchCode, city, coursecode, createdAt, dob, email, enrollmentNumber, fathername, gender, mothername, phone, pincode, state, image='https://www.akashsarki.me/me.jpg' } } = allDetails || { userDetails: { fname: '', lname: '', address: '', batchCode: '', city: '', coursecode: '', createdAt: '', dob: '', email: '', enrollmentNumber: '', fathername: '', gender: '', mothername: '', phone: '', pincode: '', state: '', image: '' } };
+    const { userDetails: { fname, lname, address, batchCode, city, coursecode, createdAt, dob, email, enrollmentNumber, fathername, gender, mothername, phone, pincode, state, image } } = allDetails || { userDetails: { fname: '', lname: '', address: '', batchCode: '', city: '', coursecode: '', createdAt: '', dob: '', email: '', enrollmentNumber: '', fathername: '', gender: '', mothername: '', phone: '', pincode: '', state: '', image: '' } };
     const { batchDetails: { batchFullName } } = allDetails || { batchDetails: { batchFullName: 'Batch Name' } };
     const fileInputRef = useRef(null);
-    const [selectedFile, setSelectedFile] = useState(null);
-
 
     const handleIconClick = () => {
         fileInputRef.current.click();
     };
 
     const handleFileChange = async (event) => {
+        if (!event.target.files[0]) return;
         const file = event.target.files[0];
-        setSelectedFile(file);
 
-        await uploadFile();
+        const formData = new FormData();
+        formData.append('imageFile', file);
+        formData.append('userEmail', email);
+        // console.log(formData.get('imageFile'))
+
+
+        try {
+
+            const res = await fetch('/api/imageUpload', {
+                method: 'POST',
+                body: formData,
+            });
+            const data = await res.json();
+            if(!data.added){
+                console.log(data.error)
+            } else {
+                // window.location.reload();
+            }
+            
+        } catch (error) {
+            console.error('Error uploading file:', error);
+        }
     };
-
-    const uploadFile = async () => {
-        if (!selectedFile) return;
-
-        //code for file uploads
-
-        // const formData = new FormData();
-        // formData.append('file', selectedFile);
-
-        // try {
-        //     const response = await fetch('/api/imageUpload', {
-        //         method: 'POST',
-        //         body: formData,
-        //     });
-
-        //     if (response.ok) {
-        //         // File uploaded successfully
-        //     } else {
-        //         // Handle error response
-        //         console.error('Error uploading file:', response.status);
-        //     }
-        // } catch (error) {
-        //     console.error('Error uploading file:', error);
-        // }
-    };
-
-    // useEffect(() => {
-    //     uploadFile();
-    // }, [selectedFile])
 
 
     return (
@@ -70,6 +60,9 @@ const page = () => {
                     <input
                         type="file"
                         id="fileInput"
+                        name='imageFile'
+                        accept='image/jpeg, image/png'
+
                         ref={fileInputRef}
                         className='hidden'
                         onChange={handleFileChange}
