@@ -12,7 +12,6 @@ const page = () => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        console.log('hi')
         if(allBatchUsers.length > 0) return;
         const fetchBatchUsers = async () => {
             const res = await fetch('/api/fetchAllUsers');
@@ -20,7 +19,6 @@ const page = () => {
             const filteredUsers = data.users?.filter((batchUsers) => {
                 return batchUsers.batchCode === batchCode
             })
-            console.log(filteredUsers)
             setAllBatchUsers(filteredUsers)
         }
         fetchBatchUsers();

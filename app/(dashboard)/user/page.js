@@ -24,7 +24,6 @@ const page = () => {
         const formData = new FormData();
         formData.append('imageFile', file);
         formData.append('userEmail', email);
-        // console.log(formData.get('imageFile'))
 
 
         try {
@@ -37,7 +36,7 @@ const page = () => {
             if(!data.added){
                 console.log(data.error)
             } else {
-                // window.location.reload();
+                window.location.reload();
             }
             
         } catch (error) {
