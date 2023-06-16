@@ -2,10 +2,12 @@ import { NextResponse } from "next/server";
 import User from "@/app/database/model/usermodel";
 import Course from "@/app/database/model/coursemodel";
 import Batch from "@/app/database/model/batchmodel";
+import connectDB from "@/app/database/connection";
 
 export async function POST(request) {
     try {
         const userInfo = await request.json();
+        await connectDB();
 
         // fetch User and all its details
         const finduser = await User.findOne({ email: userInfo.email });

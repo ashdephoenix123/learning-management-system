@@ -16,6 +16,7 @@ export default function Home() {
   const { userDetails: { createdAt } } = allDetails || { userDetails: { createdAt: '' } };
   const { batchDetails: { batchFullName, semester } } = allDetails || { batchDetails: { batchFullName: 'Batch Name', semester: "semester" } };
   const { courseDetails: { semesters } } = allDetails || { courseDetails: { semesters: [] } };
+
   useEffect(() => {
     setSemesterDetails(() => {
       return semesters.filter((item) => item.semester === semester)[0];

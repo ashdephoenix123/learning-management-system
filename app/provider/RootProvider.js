@@ -29,6 +29,7 @@ const Provider = ({ children }) => {
                 });
                 setProgress(40)
                 const data = await res.json();
+
                 setProgress(100)
                 if (!data.status) {
                     localStorage.removeItem('token');

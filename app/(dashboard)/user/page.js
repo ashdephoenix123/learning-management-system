@@ -51,7 +51,7 @@ const page = () => {
             <div className='mt-2 flex items-center max-[577px]:block '>
                 {/* <p className='fontsz2'>This is your profile page.</p> */}
                 <figure className='relative w-[200px] h-[200px] max-[577px]:w-[120px] max-[577px]:h-[120px]'>
-                    {!image ? <Image alt='userImage' fill className='object-cover border-2 rounded-full' src={'/userImage.jpg'}></Image> : <Image alt='userImage' fill className='object-cover rounded-full' src={image}></Image>}
+                    {!image ? <Image alt='userImage' fill className='object-cover border-2 rounded-full' src={'/userImage.jpg'}></Image> : <Image alt='userImage' fill className='object-cover rounded-full' priority src={image}></Image>}
                     <span className='absolute right-5 border-2 border-white bottom-5 inline-block w-4 h-4 rounded-full bg-green-500 max-[577px]:right-0'></span>
                     <div className='absolute top-5 right-5 max-[577px]:top-2 max-[577px]:right-2 rounded p-0.5 bg-gray-100'>
                         <FaPencilAlt className='cursor-pointer text-gray-600' id="fileIcon" onClick={handleIconClick} size={15} />

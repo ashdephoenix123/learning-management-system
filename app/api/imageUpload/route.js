@@ -16,13 +16,14 @@ export async function POST(request) {
 
         if (!file)
             return NextResponse.json(
-                { error: "File blob is required." },
+                { error: "File is required." },
                 { status: 400 }
             );
 
         const buffer = Buffer.from(await file.arrayBuffer());
 
-        const filename = `${findUser.enrollmentNumber}.${mime.getExtension(
+        const sameDate = Date.now();
+        const filename = `${sameDate}-${findUser.enrollmentNumber}.${mime.getExtension(
             file.type
         )}`;
 
@@ -41,9 +42,24 @@ export async function POST(request) {
 
         const bucket = storage.bucket(bucketName);
 
+        //check
+
+        storage.bucket(bucketName).getFiles(function (err, files) {
+            if (!err) {
+                files.forEach(function (file) {
+                   if(file.name.includes(findUser.enrollmentNumber)){
+                       file.delete();
+                   }
+                });
+            }
+        })
+
+        //end check
+
+
         const newFile = bucket.file(`uploads/userImages/${filename}`);
 
-        await newFile.save(buffer, { contentType: file.type });
+        await newFile.save(buffer);
 
         const imageUrl = `https://storage.googleapis.com/${bucketName}/uploads/userImages/${filename}`;
 

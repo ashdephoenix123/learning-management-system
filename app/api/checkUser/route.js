@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken'
 import User from "@/app/database/model/usermodel";
 import Course from "@/app/database/model/coursemodel";
 import Batch from "@/app/database/model/batchmodel";
+import connectDB from "@/app/database/connection";
 
 export async function POST(request) {
     try {
@@ -10,6 +11,7 @@ export async function POST(request) {
         const checkToken = jwt.verify(userInfo.token, process.env.JWT_SECRET);
         if(!checkToken || checkToken.email !== userInfo.email) throw new Error("Something went wrong, Please Re-login!");
 
+        await connectDB();
         //fetch User and all its details
         const finduser = await User.findOne({ email: userInfo.email });
         const courseEnrolled = Course.findOne({ coursecode: finduser.coursecode });
