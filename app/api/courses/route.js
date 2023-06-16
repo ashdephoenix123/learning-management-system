@@ -17,10 +17,10 @@ export async function GET(request) {
 export async function POST(request) {
     try {
         await connectDB();
-        const { name, coursecode, semesters, totalFee } = await request.json();
+        const { name, coursecode, semesters, totalFee, programInfo, courseMatrix, weeklySchedule } = await request.json();
         const findCourse = await Course.findOne({ coursecode })
         if(findCourse) throw new Error('Course already added!');
-        const newCourse = new Course({ name, semesters, totalFee: Number(totalFee), coursecode });
+        const newCourse = new Course({ name, semesters, totalFee: Number(totalFee), coursecode, programInfo, courseMatrix, weeklySchedule });
         await newCourse.save();
         return NextResponse.json({ added: true })
     } catch (error) {

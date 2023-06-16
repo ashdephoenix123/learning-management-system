@@ -3,7 +3,7 @@
 import { useRootContext } from '@/app/provider/RootProvider'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import _ from 'lodash'
 import { FaPencilAlt } from 'react-icons/fa'
 
@@ -92,9 +92,13 @@ const page = () => {
                     <p className='font-semibold mb-2'>General Information</p>
                     <ul>
                         <li>&bull; &nbsp; Batch Code: {batchCode}</li>
-                        <li>&bull; &nbsp; Birth Date: {dob}</li>
+                        <li>&bull; &nbsp; Enrolled Course Code: {coursecode}</li>
+                        <li>&bull; &nbsp; Birth Date: {new Date(dob).toLocaleDateString('en-IN', { day: '2-digit', month: 'long', year: 'numeric' })}</li>
                         <li>&bull; &nbsp; Enrollment Number: {enrollmentNumber}</li>
                         <li>&bull; &nbsp; Gender: {_.capitalize(gender)}</li>
+                        <li>&bull; &nbsp; Address: {`${_.capitalize(address)}, ${_.capitalize(city)}, ${_.capitalize(state)}, ${pincode}`}</li>
+                        <li>&bull; &nbsp; Enrolled on: {new Date(createdAt).toLocaleDateString('en-IN', { day: '2-digit', month: 'long', year: 'numeric' })}</li>
+
                     </ul>
                 </div>
                 <div className='mb-4'>
@@ -104,7 +108,7 @@ const page = () => {
                     </ul>
                 </div>
                 <div className='mb-4'>
-                    <p>To update any Information, Kindly raise a ticket through ECS Portal <Link className='underline text-blue-600' href='/support'>here</Link>.</p>
+                    <p>To update any Information or have any query, Kindly raise a ticket from <Link className='underline text-blue-600' href='/support'>here</Link>.</p>
                 </div>
             </div>
 

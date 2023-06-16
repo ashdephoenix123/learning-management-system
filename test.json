@@ -12,7 +12,7 @@
     {
         "name": "Masters in Business Administration",
         "coursecode": "MBA",
-        "totalFee": 7000,
+        "totalFee": 8000,
         "semesters": [
             {
                 "semester": 1,
@@ -3255,8 +3255,28 @@
                     }
                 ]
             }
+        ],
+        "programInfo": {
+            "handbook": "https://www.akashsarki.me",
+            "calendarEvents": "https://www.akashsarki.me",
+            "faqs": "https://www.akashsarki.me",
+            "importantAnnouncements": [
+                {
+                    "title": "Title 1 of Important Announcement",
+                    "linkToPDF": "https://www.akashsaarki.me"
+                },
+                {
+                    "title": "Title 2 of Important Announcement",
+                    "linkToPDF": "https://www.akashsaarki.me"
+                }
+            ]
+        },
+        "courseMatrix": "https://www.akashsarki.me",
+        "weeklySchedule": [
+            {
+                "weekNumber": 1,
+                "linkToPDF": "https://www.akashsaarki.me"
+            }
         ]
     }
 ]
-
-

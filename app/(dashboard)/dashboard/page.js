@@ -15,7 +15,7 @@ export default function Home() {
   const [semesterDetails, setSemesterDetails] = useState({});
   const { userDetails: { createdAt } } = allDetails || { userDetails: { createdAt: '' } };
   const { batchDetails: { batchFullName, semester } } = allDetails || { batchDetails: { batchFullName: 'Batch Name', semester: "semester" } };
-  const { courseDetails: { semesters } } = allDetails || { courseDetails: { semesters: [] } };
+  const { courseDetails: { semesters, programInfo, weeklySchedule, courseMatrix } } = allDetails || { courseDetails: { semesters: [], programInfo: {}, weeklySchedule: [], courseMatrix:'' } };
 
   useEffect(() => {
     setSemesterDetails(() => {
