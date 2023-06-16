@@ -49,7 +49,7 @@ const Card = ({ subjectDetails }) => {
                                     <Image className="card-img" src={item.subjectimage} alt="proj9" fill></Image>
                                 </figure>
                                 <div className="card-info tracking-tight">
-                                    <h3 className="fontsz1 h-12"><span>04. </span>{item.subjectname}</h3>
+                                    <h3 className="fontsz1 h-12"><span>0{index+4}. </span>{item.subjectname}</h3>
                                     <p className='mb-1 text-gray-200'>{item.subjectcode}</p>
                                     <p className='mb-2 text-gray-200'>When: 1 Apr - 31 Dec 2023</p>
                                     <p className='text-right fontsz3 text-gray-200'>{item.chapters.length} lesson</p>
@@ -58,18 +58,6 @@ const Card = ({ subjectDetails }) => {
                         )
                     })
                 }
-
-                {/* <Link href='/' className="card font1">
-                    <figure className="card-figure relative h-[15rem] w-full">
-                        <Image className="card-img" src="/12.jpg" alt="proj9" fill></Image>
-                    </figure>
-                    <div className="card-info tracking-tight">
-                        <h3 className="fontsz1 h-12"><span>09. </span>Webinar</h3>
-                        <p className='mb-1 text-gray-200'>WEBINAR</p>
-                        <p className='mb-2 text-gray-200'>When: 1 Apr - 31 Dec 2023</p>
-                        <p className='text-right fontsz3 text-gray-200'>1 lesson</p>
-                    </div>
-                </Link> */}
             </main>
         </>
     )

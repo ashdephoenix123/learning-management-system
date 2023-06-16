@@ -4,7 +4,7 @@ import React from 'react'
 import _ from 'lodash'
 
 async function getData(semesterNumber, coursecode) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { next: { revalidate: 60 } })
     const data = await res.json()
 
     const subjectsBySemester = {}
@@ -33,6 +33,7 @@ async function getData(semesterNumber, coursecode) {
 
 const Page = async ({ params }) => {
     const subjects = await getData(params.semester, params.coursecode)
+    console.log(subjects)
 
     return (
         <>
@@ -49,7 +50,7 @@ const Page = async ({ params }) => {
                                     </figure>
                                     <div className="card-info tracking-tight">
                                         <h3 className="fontsz1 h-12"><span>{index + 1}. </span>{item.subjectname}</h3>
-                                        <p className='mb-1 text-gray-200'>{item.subjectcode}</p>
+                                        <p className='my-1 text-sm text-gray-200'>{item.subjectcode}</p>
                                         {/* <p className='mb-2 text-gray-200'>When: 1 Apr - 31 Dec 2023</p> */}
                                         <p className='text-right fontsz3 text-gray-200'>{item.chapters.length} lesson</p>
                                     </div>
