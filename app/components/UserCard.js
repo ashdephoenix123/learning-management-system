@@ -12,8 +12,11 @@ const UserCard = ({ students }) => {
                 {
                     students?.map((eachStudent, index) => {
                         return <div key={index} className="card2 font1">
-                            <figure className="mx-auto my-3 relative overflow-hidden rounded-full h-[150px] w-[150px] max-[577px]:w-[120px] max-[577px]:h-[120px]">
-                                <Image className="card-img object-cover" src="/me2.jpg" alt="proj9" fill></Image>
+                            <figure className="mx-auto my-3 relative overflow-hidden rounded-full h-[150px] w-[150px] max-[577px]:w-[120px] max-[577px]:h-[120px] border border-gray-300">
+                                {
+                                    eachStudent.image ?
+                                        <Image className="card-img object-cover" src={eachStudent.image} alt="userImage" fill></Image> : <Image className="card-img object-cover" src="/userImage.jpg" alt="proj9" fill></Image>
+                                }
                             </figure>
                             <div className='py-2'>
                                 <p className='text-center text-sm'>{_.capitalize(eachStudent.fname)} {_.capitalize(eachStudent.lname)}</p>
@@ -28,12 +31,3 @@ const UserCard = ({ students }) => {
 }
 
 export default UserCard
-
-/* <Link key={index} href={`/users/${eachStudent.enrollmentNumber}`} className="card2 font1">
-                            <figure className="mx-auto my-3 relative overflow-hidden rounded-full h-[150px] w-[150px] max-[577px]:w-[120px] max-[577px]:h-[120px]">
-                                <Image className="card-img object-cover" src="/me2.jpg" alt="proj9" fill></Image>
-                            </figure>
-                            <div className='py-2'>
-                                <p className='text-center text-sm'>{eachStudent.fname} {eachStudent.lname}</p>
-                            </div>
-                        </Link> */
