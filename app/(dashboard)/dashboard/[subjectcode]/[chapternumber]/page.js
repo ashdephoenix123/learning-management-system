@@ -5,7 +5,7 @@ import { MdDownloadForOffline } from 'react-icons/md'
 import _ from 'lodash'
 
 async function getData(subjectcode, chapternumber) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { cache: 'no-store' })
     const data = await res.json()
 
     const chaptersByNumber = {}
@@ -59,15 +59,18 @@ const Page = async ({ params }) => {
                     <div>
                         {
                             currentChapter.recordedsessions?.map((item, index) => (
-                                <div key={index}>
+                                <div key={index} className='mb-2'>
                                     &bull;&nbsp;<Link className='underline text-sm italic' target='_blank' href={item}>{`Session ${index + 1}`}</Link>
+                                    <div className=''>
+                                        <video height={380} width={520} controls>
+                                            <source src={item} type="video/mp4" /> // make sure the video uploaded is in mp4 format or you can change the type accordingly
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             ))
                         }
                     </div>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7C2z4GqqS5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </section>
         </>
