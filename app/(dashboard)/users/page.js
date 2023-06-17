@@ -14,7 +14,7 @@ const page = () => {
     useEffect(() => {
         if (allBatchUsers.length > 0) return;
         const fetchBatchUsers = async () => {
-            const res = await fetch('/api/fetchAllUsers', { next: { revalidate: 60 } });
+            const res = await fetch('/api/fetchAllUsers', { next: { revalidate: 3 } });
             const data = await res.json();
             const filteredUsers = data.users?.filter((batchUsers) => {
                 return batchUsers.batchCode === batchCode

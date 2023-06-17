@@ -5,7 +5,7 @@ import { MdDownloadForOffline } from 'react-icons/md'
 import _ from 'lodash'
 
 async function getData(subjectcode, chapternumber) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { next: { revalidate: 60 } })
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { next: { revalidate: 3 } })
     const data = await res.json()
 
     const chaptersByNumber = {}
@@ -22,7 +22,7 @@ async function getData(subjectcode, chapternumber) {
         })
     })
 
-    // console.log(chaptersByNumber)
+
     const currentChapter = chaptersByNumber[Number(chapternumber)]
 
     if (!currentChapter) {

@@ -4,7 +4,7 @@ import React from 'react'
 import _ from 'lodash'
 
 async function getData(semesterNumber, coursecode) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { next: { revalidate: 60 } })
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { next: { revalidate: 3 } })
     const data = await res.json()
 
     const subjectsBySemester = {}
@@ -33,8 +33,8 @@ async function getData(semesterNumber, coursecode) {
 
 const Page = async ({ params }) => {
     const subjects = await getData(params.semester, params.coursecode)
-    console.log(subjects)
 
+    
     return (
         <>
             <section className='min-h-screen'>
