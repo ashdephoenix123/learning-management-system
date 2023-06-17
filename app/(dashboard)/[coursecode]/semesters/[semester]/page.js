@@ -4,7 +4,7 @@ import React from 'react'
 import _ from 'lodash'
 
 async function getData(semesterNumber, coursecode) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`, { next: { revalidate: 3 } })
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/courses`)
     const data = await res.json()
 
     const subjectsBySemester = {}
