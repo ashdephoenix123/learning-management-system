@@ -23,8 +23,6 @@ export default function Home() {
     });
   }, [semester])
 
-  console.log(allDetails)
-
   return (
     <>
       <div className="flex text-sm max-[920px]:block">

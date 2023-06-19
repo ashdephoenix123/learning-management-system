@@ -7,6 +7,7 @@ import Loading from '@/app/loading';
 
 const page = () => {
     const allDetails = useRootContext();
+    const { userDetails: { enrollmentNumber } } = allDetails || { userDetails: { enrollmentNumber: '' } };
     const { batchDetails: { batchCode } } = allDetails || { batchDetails: { batchCode: '' } };
     const [allBatchUsers, setAllBatchUsers] = useState([]);
     const [loading, setLoading] = useState(true)
@@ -17,8 +18,9 @@ const page = () => {
             const res = await fetch('/api/fetchAllUsers', { cache: 'no-store' });
             const data = await res.json();
             const filteredUsers = data.users?.filter((batchUsers) => {
-                return batchUsers.batchCode === batchCode
+                return (batchUsers.batchCode === batchCode) && batchUsers.enrollmentNumber !== enrollmentNumber;
             })
+           
             setAllBatchUsers(filteredUsers)
         }
         fetchBatchUsers();
