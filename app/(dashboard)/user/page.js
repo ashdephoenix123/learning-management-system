@@ -50,19 +50,7 @@ const page = () => {
         }
     };
 
-    const embedHTML = `
-    <div id="embedHTML">
-        <div>Hello this is a Test.</div>
-    </div>
-    `
-
     const handleDownload = () => {
-
-        const xWidth = (text) => {
-            const textWidth = doc.getTextWidth(text);
-            const pageWidth = doc.internal.pageSize.getWidth();
-            return (pageWidth - textWidth) / 2;
-        }
 
         // Create a new jsPDF instance
         const doc = new jsPDF();
@@ -134,7 +122,7 @@ const page = () => {
                 <figure className='relative w-[200px] h-[200px] max-[577px]:w-[120px] max-[577px]:h-[120px]'>
                     {!image ? <Image alt='userImage' fill className='object-cover border-2 rounded-full' src={'/userImage.jpg'}></Image> : <Image alt='userImage' fill className='object-cover rounded-full' priority src={image}></Image>}
                     <span className='absolute right-5 border-2 border-white bottom-5 inline-block w-4 h-4 rounded-full bg-green-500 max-[577px]:right-0'></span>
-                    <div className='absolute top-5 right-5 max-[577px]:top-2 max-[577px]:right-2 rounded p-0.5 bg-gray-100'>
+                    <div className='absolute top-5 right-5 max-[577px]:top-2 max-[577px]:right-2 rounded p-0.5 bg-gray-100 hover:scale-110 hover:bg-gray-200 transition-all'>
                         <FaPencilAlt className='cursor-pointer text-gray-600' id="fileIcon" onClick={handleIconClick} size={15} />
                     </div>
                     <input
