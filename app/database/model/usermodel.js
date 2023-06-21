@@ -1,6 +1,37 @@
 import mongoose from 'mongoose';
 import Counter from './enrollmentCounter.js';
 
+const replySchema = new mongoose.Schema({
+    sender: {
+        type: String,
+    },
+    body: {
+        type: String,
+    },
+    repliedAt: {
+        type: Date,
+        default: Date.now,
+    },
+});
+
+const inbox = new mongoose.Schema({
+    from: String,
+    to: String,
+    subject: String,
+    message: String,
+    recipientID: String,
+    senderID: String,
+    isRead: { type: Boolean, default: false },
+    replies: [replySchema],
+    isIncoming: { type: Boolean, default: true },
+    date: { type: Date, default: Date.now },
+});
+
+const announcements = new mongoose.Schema({
+    announcement: String,
+    date: { type: Date, default: Date.now },
+});
+
 const userSchema = new mongoose.Schema({
     enrollmentNumber: { type: String, unique: true },
     fname: { type: String, required: true },
@@ -21,7 +52,9 @@ const userSchema = new mongoose.Schema({
     status: { type: String, required: true, default: "Pending" },
     orderID: { type: String, required: true },
     batchCode: { type: String, required: true },
-    image: { data: String }
+    image: { data: String },
+    inbox: [inbox],
+    announcements: [announcements]
 }, { timestamps: true });
 
 userSchema.pre('save', async function (next) {

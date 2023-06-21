@@ -3,7 +3,7 @@
         "batchCode": "MCAJULY2023",
         "batchShortName": "MCA July 2023",
         "batchFullName": "Masters in Computer Application (MCA) November 2023",
-        "intake": false,
+        "intake": true,
         "coursecode": "MCA",
         "announcements": [],
         "inbox": [],
