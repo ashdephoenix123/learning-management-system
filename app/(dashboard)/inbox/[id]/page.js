@@ -28,7 +28,6 @@ const page = () => {
     });
 
     const [allReplies, setAllReplies] = useState([])
-    console.log(allReplies)
 
     const [form, setForm] = useState({
         to: '',

@@ -36,7 +36,7 @@ const page = () => {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        const res = await fetch('/api/sendMessage', {
+        const res = await fetch(`/api/sendMessage`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const page = () => {
     }
 
     const clearInbox = async () => {
-        const res = await fetch('/api/clearInbox', {
+        const res = await fetch(`/api/clearInbox`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ const page = () => {
             body: JSON.stringify({ email })
         })
         const data = await res.json();
-        if(data.status){
+        if (data.status) {
             fetchInbox();
         } else {
             alert(data.error)
@@ -77,7 +77,7 @@ const page = () => {
 
     const updateIsRead = async (eachInbox) => {
 
-        const res = await fetch('/api/updateIsRead', {
+        const res = await fetch(`/api/updateIsRead`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -89,12 +89,15 @@ const page = () => {
     const fetchInbox = async () => {
         const res = await fetch(`/api/userInbox?email=${email}`);
         const data = await res.json();
+
         if (data.status) {
             const incoming = data.userInbox.filter(item => item.isIncoming);
             const outgoing = data.userInbox.filter(item => !item.isIncoming);
 
             setInbox(incoming);
             setOutGoing(outgoing)
+        } else {
+            alert(data.error)
         }
     }
     useEffect(() => {
@@ -147,7 +150,7 @@ const page = () => {
                                     <tbody className=''>
                                         {
                                             inbox?.map((eachInbox, index) => {
-                                                return <tr key={index} className={`border-b border-b-gray-200 hover:bg-gray-50 transition-all ${!eachInbox.isRead && 'font-semibold bg-gray-50'}`} onClick={()=> updateIsRead(eachInbox)}>
+                                                return <tr key={index} className={`border-b border-b-gray-200 hover:bg-gray-50 transition-all ${!eachInbox.isRead && 'font-semibold bg-gray-50'}`} onClick={() => updateIsRead(eachInbox)}>
                                                     <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.from}</Link></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.subject}</Link></td>
@@ -198,7 +201,7 @@ const page = () => {
                                     <tbody className=''>
                                         {
                                             outgoing?.map((eachInbox, index) => {
-                                                return <tr key={index} className={`border-b border-b-gray-200 hover:bg-gray-50 transition-all ${!eachInbox.isRead && 'font-semibold bg-gray-50'}`}  onClick={()=> updateIsRead(eachInbox)}>
+                                                return <tr key={index} className={`border-b border-b-gray-200 hover:bg-gray-50 transition-all ${!eachInbox.isRead && 'font-semibold bg-gray-50'}`} onClick={() => updateIsRead(eachInbox)}>
                                                     <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.to}</Link></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.subject}</Link></td>

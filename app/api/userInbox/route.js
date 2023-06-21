@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import connectDB from "@/app/database/connection";
 import User from "@/app/database/model/usermodel";
 
+export const dynamic = 'force-dynamic';
+
 // export async function POST(request) {
 //     try {
 //         //for inbox

@@ -40,7 +40,7 @@ const page = () => {
             });
             const data = await res.json();
             if (!data.added) {
-                console.log(data.error)
+                alert(data.error)
             } else {
                 window.location.reload();
             }

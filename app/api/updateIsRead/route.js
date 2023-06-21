@@ -6,7 +6,6 @@ export async function POST(request) {
     try {
         //for inbox
         const { eachInbox } = await request.json();
-        console.log(eachInbox)
         await connectDB();
 
         const user = await User.findOneAndUpdate(
