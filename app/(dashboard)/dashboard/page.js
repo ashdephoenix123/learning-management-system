@@ -6,7 +6,7 @@ import Support from "../../components/Support";
 import Todo from "../../components/Todo";
 import Carousel from "../../components/Carousel";
 import EnrollmentInfo from "@/app/components/EnrollmentInfo";
-import { useRootContext } from "@/app/provider/RootProvider";
+import { useRootContext, useSharedProgress } from "@/app/provider/RootProvider";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
   const [semesterDetails, setSemesterDetails] = useState({});
   const { userDetails: { createdAt } } = allDetails || { userDetails: { createdAt: '' } };
   const { batchDetails: { batchFullName, semester } } = allDetails || { batchDetails: { batchFullName: 'Batch Name', semester: "semester" } };
-  const { courseDetails: { semesters, programInfo, weeklySchedule, courseMatrix } } = allDetails || { courseDetails: { semesters: [], programInfo: {}, weeklySchedule: [], courseMatrix:'' } };
+  const { courseDetails: { semesters, programInfo, weeklySchedule, courseMatrix } } = allDetails || { courseDetails: { semesters: [], programInfo: {}, weeklySchedule: [], courseMatrix: '' } };
 
   useEffect(() => {
     setSemesterDetails(() => {

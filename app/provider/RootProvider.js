@@ -6,6 +6,7 @@ import LoadingBar from 'react-top-loading-bar'
 
 
 export const RootContextProvider = createContext();
+// export const ShareProgress = createContext();
 
 const Provider = ({ children }) => {
     const router = useRouter();
@@ -59,12 +60,14 @@ const Provider = ({ children }) => {
 
     return (
         <RootContextProvider.Provider value={allDetails}>
-            <LoadingBar
-                color='#fff'
-                progress={progress}
-                onLoaderFinished={() => setProgress(0)}
-            />
-            {children}
+            {/* <ShareProgress.Provider value={{progress, setProgress}} > */}
+                <LoadingBar
+                    color='#fff'
+                    progress={progress}
+                    onLoaderFinished={() => setProgress(0)}
+                />
+                {children}
+            {/* </ShareProgress.Provider> */}
         </RootContextProvider.Provider>
     )
 }
@@ -74,3 +77,7 @@ export default Provider
 export const useRootContext = () => {
     return useContext(RootContextProvider);
 }
+
+// export const useSharedProgress = () => {
+//     return useContext(ShareProgress)
+// }

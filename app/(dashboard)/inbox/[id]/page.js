@@ -6,7 +6,6 @@ import { useParams } from 'next/navigation'
 import { MdDelete } from 'react-icons/md'
 import { useRootContext } from '@/app/provider/RootProvider';
 import { RxCross2 } from 'react-icons/rx';
-import { set } from 'lodash';
 import { useRouter } from 'next/navigation';
 
 const page = () => {
@@ -43,9 +42,9 @@ const page = () => {
             body: JSON.stringify({ email, _id: param.id })
         })
         const data = await res.json();
-        if(data.status){
+        if (data.status) {
             router.replace('/inbox')
-        }else {
+        } else {
             alert(data.error)
         }
     }
@@ -72,6 +71,8 @@ const page = () => {
         })
         const data = await res.json();
         if (data.status) {
+            //emit a socket event that update has been done
+
             //ending
             fetchInbox();
             setShowModal(false);
@@ -119,6 +120,7 @@ const page = () => {
         if (!email) return;
         fetchInbox();
     }, [email, param.id])
+
 
     return (
         <div className='min-h-screen'>

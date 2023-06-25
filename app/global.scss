@@ -35,13 +35,15 @@ body {
 .container1 {
     padding-top: 3.3rem;
     display: flex;
-
+    
     .sidebar {
         flex: 0 0 8%;
     }
-
+    
     .main-content {
         flex: 1;
+        word-wrap: break-word;
+        overflow: hidden;
     }
 }
 

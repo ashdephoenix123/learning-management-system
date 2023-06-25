@@ -7,6 +7,8 @@ import { VscSearch } from 'react-icons/vsc'
 import { RxCross2 } from 'react-icons/rx'
 import { useRootContext } from '@/app/provider/RootProvider';
 import Link from 'next/link';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const page = () => {
     const [searchInput, setSearchInput] = useState('')
@@ -15,6 +17,8 @@ const page = () => {
     const [outgoing, setOutGoing] = useState([]); // [{from, subject, message}]
     const [showModal, setShowModal] = useState(false);
     const [whichOne, setWhichOne] = useState(0);
+    // const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
+
     const allDetails = useRootContext();
     const { userDetails: { email } } = allDetails || { userDetails: { email: '' } };
     const [form, setForm] = useState({
@@ -23,6 +27,41 @@ const page = () => {
         subject: '',
         message: ''
     })
+
+    // const addCheckboxID = (inboxId) => {
+    //     if (selectedCheckboxes.includes(inboxId)) {
+    //         setSelectedCheckboxes(selectedCheckboxes.filter((id) => id !== inboxId));
+    //     } else {
+    //         setSelectedCheckboxes([...selectedCheckboxes, inboxId]);
+    //     }
+    // };
+
+    // const deleteSelectedInbox = async (arrofInboxes) => {
+    //     if (!arrofInboxes) {
+    //         toast.error('Please select an inbox.', {
+    //             position: "top-right",
+    //             autoClose: 3000,
+    //             hideProgressBar: false,
+    //             closeOnClick: true,
+    //             pauseOnHover: true,
+    //             draggable: true,
+    //             progress: undefined,
+    //             theme: "light",
+    //         });
+    //     } else {
+    //         const res = await fetch('/api/deleteSelectedInbox', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json'
+    //             },
+    //             body: JSON.stringify({ email, selectedCheckboxes })
+    //         })
+    //         const data = await res.json();
+    //         if (data.status) {
+    //             fetchInbox();
+    //         }
+    //     }
+    // }
 
     const searchInputValue = (e) => {
         const { value } = e.target;
@@ -86,6 +125,17 @@ const page = () => {
         })
     }
 
+    const updateIsReadFrom = async (eachInbox) => {
+
+        const res = await fetch(`/api/updateIsReadFrom`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ eachInbox })
+        })
+    }
+
     const fetchInbox = async () => {
         const res = await fetch(`/api/userInbox?email=${email}`);
         const data = await res.json();
@@ -107,6 +157,18 @@ const page = () => {
 
     return (
         <div className='min-h-screen'>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
             <div className='flex items-center fontsz2 border-b-2 pb-1'>
                 <h3 className={`mr-2 cursor-pointer ${whichOne !== 0 && 'text-gray-400 hover:text-inherit'}`} onClick={() => setWhichOne(0)}>Inbox <span className='bg-gray-400 fontsz3 p-1 text-white'>{inbox.length}</span></h3>
                 <h3 className={`mr-2 cursor-pointer ${whichOne !== 1 && 'text-gray-400 hover:text-inherit'}`} onClick={() => setWhichOne(1)}>Sent Mail <span className='bg-gray-400 fontsz3 p-1 text-white'>{outgoing.length}</span></h3>
@@ -119,7 +181,7 @@ const page = () => {
                         <h3 className='heading3 my-4'>
                             Inbox
                         </h3>
-                        <div className='flex items-center fontsz2'>
+                        {/* <div className='flex items-center fontsz2'>
                             {
                                 showInput ?
                                     <>
@@ -132,16 +194,16 @@ const page = () => {
                                         <div onClick={() => setShowInput(prev => !prev)} className='cursor-pointer flex items-center px-2 py-0.5 rounded-tl rounded-bl border group'><VscSearch className='mr-1 group-hover:text-purple-600' size={12} />Search</div>
                                     </>
                             }
-                            {/* <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><AiOutlinePlus className='mr-1 group-hover:text-green-600' size={12} />Mark as read</div> */}
-                            {/* <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><RxCross2 className='mr-1 group-hover:text-red-600' size={12} />Mark as unread</div> */}
-                            <div className='cursor-pointer flex items-center px-2 py-0.5 rounded-tr rounded-br border group border-l-0'><MdDelete className='mr-1 group-hover:text-red-600' size={12} />Delete</div>
-                        </div>
+                            <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><AiOutlinePlus className='mr-1 group-hover:text-green-600' size={12} />Mark as read</div>
+                            <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><RxCross2 className='mr-1 group-hover:text-red-600' size={12} />Mark as unread</div>
+                            <div onClick={deleteSelectedInbox} className='cursor-pointer flex items-center px-2 py-0.5 rounded-tr rounded-br border group border-l-0'><MdDelete className='mr-1 group-hover:text-red-600' size={12} />Delete</div>
+                        </div> */}
                         {
                             inbox.length !== 0 ?
                                 <table className="my-2 text-left text-sm font-light w-full table-fixed">
                                     <thead className="border-b font-medium bg-gray-200">
                                         <tr>
-                                            <th scope="col" className="px-6 py-2 w-16"><input type="checkbox" name="" id="" /></th>
+                                            {/* <th scope="col" className="px-6 py-2 w-16"><input type="checkbox" name="" id="" /></th> */}
                                             <th scope="col" className="px-6 py-2">From</th>
                                             <th scope="col" className="px-6 py-2">Subject</th>
                                             <th scope="col" className="px-6 py-2 text-right">Sent</th>
@@ -151,7 +213,7 @@ const page = () => {
                                         {
                                             inbox?.map((eachInbox, index) => {
                                                 return <tr key={index} className={`border-b border-b-gray-200 hover:bg-gray-50 transition-all ${!eachInbox.isRead && 'font-semibold bg-gray-50'}`} onClick={() => updateIsRead(eachInbox)}>
-                                                    <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
+                                                    {/* <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" value={eachInbox._id} onChange={() => { addCheckboxID(eachInbox._id) }} /></td> */}
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.from}</Link></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.subject}</Link></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden text-right"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{new Date(eachInbox.date).toDateString()}</Link></td>
@@ -170,7 +232,7 @@ const page = () => {
                         <h3 className='heading3 my-4'>
                             Sent Mail
                         </h3>
-                        <div className='flex items-center fontsz2'>
+                        {/* <div className='flex items-center fontsz2'>
                             {
                                 showInput ?
                                     <>
@@ -183,16 +245,16 @@ const page = () => {
                                         <div onClick={() => setShowInput(prev => !prev)} className='cursor-pointer flex items-center px-2 py-0.5 rounded-tl rounded-bl border group'><VscSearch className='mr-1 group-hover:text-purple-600' size={12} />Search</div>
                                     </>
                             }
-                            {/* <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><AiOutlinePlus className='mr-1 group-hover:text-green-600' size={12} />Mark as read</div> */}
-                            {/* <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><RxCross2 className='mr-1 group-hover:text-red-600' size={12} />Mark as unread</div> */}
+                            <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><AiOutlinePlus className='mr-1 group-hover:text-green-600' size={12} />Mark as read</div>
+                            <div className='cursor-pointer flex items-center px-2 py-0.5 border group border-l-0'><RxCross2 className='mr-1 group-hover:text-red-600' size={12} />Mark as unread</div>
                             <div className='cursor-pointer flex items-center px-2 py-0.5 rounded-tr rounded-br border group border-l-0'><MdDelete className='mr-1 group-hover:text-red-600' size={12} />Delete</div>
-                        </div>
+                        </div> */}
                         {
                             outgoing.length !== 0 ?
                                 <table className="my-2 text-left text-sm font-light w-full table-fixed">
                                     <thead className="border-b font-medium bg-gray-200">
                                         <tr>
-                                            <th scope="col" className="px-6 py-2 w-16"><input type="checkbox" name="" id="" /></th>
+                                            {/* <th scope="col" className="px-6 py-2 w-16"><input type="checkbox" name="" id="" /></th> */}
                                             <th scope="col" className="px-6 py-2">To</th>
                                             <th scope="col" className="px-6 py-2">Subject</th>
                                             <th scope="col" className="px-6 py-2 text-right">Sent</th>
@@ -201,8 +263,8 @@ const page = () => {
                                     <tbody className=''>
                                         {
                                             outgoing?.map((eachInbox, index) => {
-                                                return <tr key={index} className={`border-b border-b-gray-200 hover:bg-gray-50 transition-all ${!eachInbox.isRead && 'font-semibold bg-gray-50'}`} onClick={() => updateIsRead(eachInbox)}>
-                                                    <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td>
+                                                return <tr key={index} className={`border-b border-b-gray-200 hover:bg-gray-50 transition-all ${!eachInbox.isRead && 'font-semibold bg-gray-50'}`} onClick={() => updateIsReadFrom(eachInbox)}>
+                                                    {/* <td className="whitespace-nowrap px-6 py-2 font-medium"><input type="checkbox" name="" id="" /></td> */}
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.to}</Link></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{eachInbox.subject}</Link></td>
                                                     <td className="whitespace-nowrap text-ellipsis overflow-hidden text-right"><Link className='block px-6 py-2' href={`/inbox/${eachInbox._id}`}>{new Date(eachInbox.date).toDateString()}</Link></td>

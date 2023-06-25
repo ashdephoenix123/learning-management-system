@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className='container1'>
           <Sidebar />
-          <section className='main-content '>
+          <section className='main-content'>
             <div className='font1 container3'>
               {children}
             </div>
