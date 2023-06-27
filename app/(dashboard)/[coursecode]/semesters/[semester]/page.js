@@ -44,7 +44,7 @@ const Page = async ({ params }) => {
                     {
                         subjects?.map((item, index) => {
                             return (
-                                <Link key={item.subjectcode} href={`${params.coursecode}/semesters/${params.semester}/${item.subjectcode}`} className="card font1">
+                                <Link key={item.subjectcode} href={`${params.semester}/${item.subjectcode}`} className="card font1">
                                     <figure className="card-figure relative h-[10rem] w-full">
                                         <Image className="card-img" src={item.subjectimage} alt="proj9" fill></Image>
                                     </figure>
