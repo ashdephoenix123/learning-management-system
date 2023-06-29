@@ -11,7 +11,7 @@ import { ImBooks } from 'react-icons/im';
 import { useRouter } from 'next/navigation';
 import Loading from './components/loading';
 
-const page = () => {
+const Page = () => {
     const [showLogin, setShowLogin] = useState(false);
     const [toggle, setToggle] = useState(false);
     const toggleref = useRef(null);
@@ -168,4 +168,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

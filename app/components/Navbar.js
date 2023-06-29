@@ -7,7 +7,7 @@ import { VscSearch } from 'react-icons/vsc'
 import { BsBoxes } from 'react-icons/bs'
 import { HiBars3 } from 'react-icons/hi2'
 import { RxCross2 } from 'react-icons/rx'
-import { FaUserAlt } from 'react-icons/fa'
+import { FaUserAlt, FaUserGraduate, FaUserTie } from 'react-icons/fa'
 import { SlArrowDown } from 'react-icons/sl'
 import { MdEmail } from 'react-icons/md'
 import { AiFillBell, AiFillCalendar, AiFillHome } from 'react-icons/ai'
@@ -16,6 +16,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useRootContext } from '../provider/RootProvider';
 import _ from 'lodash';
+import { RiDiscussFill } from 'react-icons/ri';
+import { ImBooks } from 'react-icons/im';
 
 const Navbar = () => {
     const [dropdown, setdropdown] = useState(false)
@@ -135,14 +137,16 @@ const Navbar = () => {
                         <ul>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/dashboard'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><AiFillHome className='mr-2' size={18} />Home</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={`/${coursecode}/semesters`} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><BsBoxes className='mr-2' size={18} />Semesters</span></Link></li>
-                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/users'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><FaUserAlt className='mr-2' size={18} />Users</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/users'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><FaUserGraduate className='mr-2' size={18} />Students</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/teachers'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><FaUserTie className='mr-2' size={18} />Teachers</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/forum'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><RiDiscussFill className='mr-2' size={18} />Forums</span></Link></li>
+                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/assessments'} className='flex items-center justify-between'><span className='p-4 w-full text-sm tracking-wide flex items-center'><ImBooks className='mr-2' size={18} />Assessments</span></Link></li>
 
                             <li onClick={() => { setToggle(prev => !prev) }} className='bg-zinc-300 border-b'><span className='p-4 w-full inline-block text-sm tracking-wide mr-1.5 font-semibold'>Others</span></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/support'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><BiSupport className='mr-2' size={18} />Help</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/inbox'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdEmail className='mr-2' size={18} />Inbox</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/notifications'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillBell className='mr-2' size={18} />Notifications</span></Link></li>
                             <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/calendar'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><AiFillCalendar className='mr-2' size={18} />Calendar</span></Link></li>
-                            <li onClick={() => { setToggle(prev => !prev) }} className='cursor-pointer hover:bg-zinc-200 border-b'><Link href={'/user'} className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><FaUserAlt className='mr-2' size={18} />Profile</span></Link></li>
                             <li onClick={logout} className='cursor-pointer hover:bg-zinc-200 border-b'><div className='block'><span className='p-4 w-full text-sm tracking-wide mr-1.5 flex items-center'><MdOutlineLogout className='mr-2' size={18} />Log out</span></div></li>
                         </ul>
                     </div>

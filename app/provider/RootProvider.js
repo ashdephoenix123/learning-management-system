@@ -13,9 +13,10 @@ const Provider = ({ children }) => {
     const pathname = usePathname();
     const [allDetails, setAllDetails] = useState(null);
     const [progress, setProgress] = useState(0)
-
+    const [userDetailsFetched, setUserDetailsFetched] = useState(false);
 
     useEffect(() => {
+        console.log(userDetailsFetched)
         const token = JSON.parse(localStorage.getItem('token'));
         setProgress(10)
         if (token) {
@@ -38,10 +39,14 @@ const Provider = ({ children }) => {
                     router.push('/');
                 }
                 if (data.status) {
-                    //fetch user info, batch info & course details and save it in context API
-                    setAllDetails(data.allDetails);
                     if (pathname === '/' || pathname === '/register' || pathname === '/forgotPassword') {
                         router.push('/dashboard');
+                    }
+                    //fetch user info, batch info & course details and save it in context API
+                    if (!userDetailsFetched) {
+                        // Fetch user info, batch info & course details and save it in context API
+                        setAllDetails(data.allDetails);
+                        setUserDetailsFetched(true); // Set the state variable to indicate userDetails have been fetched
                     }
                 }
             }
@@ -57,16 +62,15 @@ const Provider = ({ children }) => {
         }
     }, [pathname]);
 
-
     return (
         <RootContextProvider.Provider value={allDetails}>
             {/* <ShareProgress.Provider value={{progress, setProgress}} > */}
-                <LoadingBar
-                    color='#fff'
-                    progress={progress}
-                    onLoaderFinished={() => setProgress(0)}
-                />
-                {children}
+            <LoadingBar
+                color='#fff'
+                progress={progress}
+                onLoaderFinished={() => setProgress(0)}
+            />
+            {children}
             {/* </ShareProgress.Provider> */}
         </RootContextProvider.Provider>
     )
@@ -78,6 +82,3 @@ export const useRootContext = () => {
     return useContext(RootContextProvider);
 }
 
-// export const useSharedProgress = () => {
-//     return useContext(ShareProgress)
-// }

@@ -7,6 +7,8 @@ import { MdDelete } from 'react-icons/md'
 import { useRootContext } from '@/app/provider/RootProvider';
 import { RxCross2 } from 'react-icons/rx';
 import { useRouter } from 'next/navigation';
+import io from 'socket.io-client';
+let socket;
 
 const page = () => {
     const allDetails = useRootContext();
@@ -121,6 +123,20 @@ const page = () => {
         fetchInbox();
     }, [email, param.id])
 
+    const socketInitializer = async () => {
+        await fetch('/api/socket')
+        socket = io(undefined, {
+            path: '/api/socket_io'
+        })
+
+        socket.on('connect', () => {
+            console.log('connected')
+        })
+
+    }
+    useEffect(() => {
+        socketInitializer()
+    }, [])
 
     return (
         <div className='min-h-screen'>
