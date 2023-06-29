@@ -16,7 +16,7 @@ const Provider = ({ children }) => {
     const [userDetailsFetched, setUserDetailsFetched] = useState(false);
 
     useEffect(() => {
-        console.log(userDetailsFetched)
+
         const token = JSON.parse(localStorage.getItem('token'));
         setProgress(10)
         if (token) {
@@ -44,9 +44,21 @@ const Provider = ({ children }) => {
                     }
                     //fetch user info, batch info & course details and save it in context API
                     if (!userDetailsFetched) {
-                        // Fetch user info, batch info & course details and save it in context API
-                        setAllDetails(data.allDetails);
-                        setUserDetailsFetched(true); // Set the state variable to indicate userDetails have been fetched
+                        const res = await fetch('/api/fetchUserDetails', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(token)
+                        });
+                        const resp = await res.json();
+                        if (resp.status) {
+                            // Fetch user info, batch info & course details and save it in context API
+                            setAllDetails(resp.allDetails);
+                            setUserDetailsFetched(true); // Set the state variable to indicate userDetails have been fetched
+                        } else {
+                            //handle error
+                        }
                     }
                 }
             }
