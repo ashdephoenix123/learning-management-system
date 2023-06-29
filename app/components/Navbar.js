@@ -94,7 +94,7 @@ const Navbar = () => {
                             <li className='flex items-center cursor-pointer hoverColor1 px-2 py-1 rounded relative group' onClick={searchHandler}><VscSearch size={18} />
                                 {search &&
                                     <>
-                                        <div className='absolute top-0 right-1 flex w-[200px] fillit bg-white rounded-md z-50'>
+                                        <div className='absolute max-[860px]:right-3 top-0 right-1 flex w-[200px] fillit bg-white rounded-md z-50'>
                                             <div className='flex items-center w-full' ref={searchref}>
                                                 <input type="text" className='border-2 border-blue-500 focus:outline-none px-2 py-2 mr-2 rounded-md text-black' placeholder='Search in LMS' />
                                                 <button className='-ml-10 p-1.5' onClick={submitInputForm}>
