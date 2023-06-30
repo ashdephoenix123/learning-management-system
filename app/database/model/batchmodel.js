@@ -12,6 +12,20 @@ const announcements = new mongoose.Schema({
     date: { type: Date, default: Date.now },
 });
 
+const chats = new mongoose.Schema({
+    email: String,
+    reply: String
+})
+
+const forum = new mongoose.Schema({
+    title: String,
+    description: String,
+    isOpen: { type: Boolean, default: true },
+    openedBy: String,
+    chats: [chats],
+    createdAt: { type: Date, default: Date.now },
+});
+
 const batchSchema = new mongoose.Schema({
     batchCode: { type: String, required: true },
     batchShortName: { type: String, required: true },
@@ -20,7 +34,8 @@ const batchSchema = new mongoose.Schema({
     coursecode: { type: String, required: true },
     announcements: [announcements],
     inbox: [inbox],
-    semester: {type: Number, required: true, default: 1}
+    semester: { type: Number, required: true, default: 1 },
+    forum: [forum]
 });
 
 

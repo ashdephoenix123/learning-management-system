@@ -6,7 +6,6 @@ export async function POST(request) {
     try {
         //for inbox
         const { selectedCheckboxes, email } = await request.json();
-        console.log(selectedCheckboxes)
 
         await connectDB();
         await User.updateOne(

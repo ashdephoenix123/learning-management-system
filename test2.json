@@ -1,0 +1,19 @@
+[
+    {
+        "forum": [
+            {
+                "title": "string",
+                "description": "string",
+                "isOpen": "boolean",
+                "openedBy": "string - email",
+                "chats": [
+                    {
+                        "email": "string",
+                        "reply": "string"
+                    }
+                ],
+                "createdAt": "Date.now()"
+            }
+        ]
+    }
+]

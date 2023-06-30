@@ -76,14 +76,12 @@ const Provider = ({ children }) => {
 
     return (
         <RootContextProvider.Provider value={allDetails}>
-            {/* <ShareProgress.Provider value={{progress, setProgress}} > */}
             <LoadingBar
                 color='#fff'
                 progress={progress}
                 onLoaderFinished={() => setProgress(0)}
             />
             {children}
-            {/* </ShareProgress.Provider> */}
         </RootContextProvider.Provider>
     )
 }
