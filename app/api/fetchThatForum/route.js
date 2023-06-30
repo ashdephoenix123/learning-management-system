@@ -2,6 +2,8 @@ import connectDB from "@/app/database/connection";
 import Batch from "@/app/database/model/batchmodel";
 import { NextResponse } from "next/server";
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request) {
     try {
         const { searchParams } = new URL(request.url);

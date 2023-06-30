@@ -20,7 +20,7 @@ const Page = ({ params }) => {
     const socketInitializer = async () => {
         await fetch('/api/socket')
         socket = io(undefined, {
-            path: '/api/socket'
+            path: '/api/socket',
         })
 
         socket.on('connect', () => {
@@ -84,16 +84,15 @@ const Page = ({ params }) => {
         const data = await res.json();
         if (data.status) {
             setForum(data.thisForum)
-        }
+        } 
     }
 
     const closeForum = async () => {
         const res = await fetch(`/api/closeForum?id=${params.id}&batchCode=${batchCode}`);
         const data = await res.json();
         if (data.status) {
-            alert('yes')
-        } else {
-            alert('no')
+            fetchThatForum();
+            window.scrollTo(0, 0);
         }
     }
 
