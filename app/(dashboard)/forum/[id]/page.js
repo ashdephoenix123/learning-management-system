@@ -28,9 +28,9 @@ const Page = ({ params }) => {
         })
 
         socket.on('receive-message', (data) => {
+            console.log('here at receive msg')
             fetchThatForum();
         })
-
     }
 
     const handleSubmit = async (e) => {
