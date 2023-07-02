@@ -48,6 +48,8 @@ const Page = ({ params }) => {
             socket.emit('send-message', { email, message });
             setMessage('')
             window.scrollTo(0, document.body.scrollHeight);
+        } else {
+            alert(data.error)
         }
     }
 
