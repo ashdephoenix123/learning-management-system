@@ -7,8 +7,15 @@ const SocketHandler = (req, res) => {
         console.log('Socket is initializing')
         const io = new Server(res.socket.server, {
             path: '/api/socket',
-            addTrailingSlash: false
+            addTrailingSlash: false,
+            cors: {
+                origin: process.env.NEXT_PUBLIC_HOST,
+                methods: ["GET", "POST"],
+                credentials: true
+            }
         })
+
+
         res.socket.server.io = io;
 
         io.on('connection', (socket) => {

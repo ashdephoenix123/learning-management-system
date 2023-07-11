@@ -8,7 +8,7 @@ import io from 'socket.io-client'
 let socket;
 
 const Page = ({ params }) => {
-
+    const { id } = params;
     const allDetails = useRootContext();
     const { batchDetails: { batchCode } } = allDetails || { batchDetails: { batchCode: '' } };
     const { userDetails: { image, email } } = allDetails || { userDetails: { image: '/userImage.jpg', email: '' } };
@@ -21,8 +21,10 @@ const Page = ({ params }) => {
         await fetch('/api/socket')
         socket = io(undefined, {
             path: '/api/socket',
-            addTrailingSlash: false
-        })
+            addTrailingSlash: false,
+            withCredentials: true
+        });
+
 
         socket.on('connect', () => {
             console.log('connected')
@@ -87,7 +89,7 @@ const Page = ({ params }) => {
         const data = await res.json();
         if (data.status) {
             setForum(data.thisForum)
-        } 
+        }
     }
 
     const closeForum = async () => {
