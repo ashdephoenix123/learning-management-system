@@ -21,6 +21,7 @@ const Page = ({ params }) => {
         await fetch('/api/socket')
         socket = io(undefined, {
             path: '/api/socket',
+            addTrailingSlash: false
         })
 
         socket.on('connect', () => {
