@@ -1,0 +1,18 @@
+teachers model: 
+  - fname
+  - lname
+  - image
+  - email
+  - phone
+  - address
+  - city
+  - state
+  - pincode
+  - gender
+  - dob
+  - coursecode
+  - password
+  - designation
+  - batchesEnrolledIn [array of batchcode]
+  - inbox
+  - announcements

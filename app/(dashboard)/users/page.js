@@ -12,6 +12,8 @@ const page = () => {
     const [allBatchUsers, setAllBatchUsers] = useState([]);
     const [loading, setLoading] = useState(true)
 
+    console.log(allBatchUsers);
+
     useEffect(() => {
         if (allBatchUsers.length > 0) return;
         const fetchBatchUsers = async () => {
@@ -36,7 +38,7 @@ const page = () => {
                 loading ? <Loading />
                     :
 
-                    allBatchUsers && <UserCard students={allBatchUsers} />
+                    allBatchUsers && <UserCard userdata={allBatchUsers} />
 
             }
         </div>

@@ -10,12 +10,12 @@ export async function GET(request) {
         await connectDB();
         // // fetch User and all its details
         const findUser = await User.findOne({ _id: id });
-        const { fname, lname, image, batchCode } = findUser;
+        const { fname, lname, image, batchCode, email } = findUser;
 
         const batchEnrolled = await Batch.findOne({ batchCode: batchCode });
         const { batchFullName } = batchEnrolled;
 
-        return NextResponse.json({ status: true, user: { fname, lname, image, batchFullName } })
+        return NextResponse.json({ status: true, user: { fname, lname, image, email, batchFullName } })
     } catch (error) {
         return NextResponse.json({ status: false, error: error.message })
     }

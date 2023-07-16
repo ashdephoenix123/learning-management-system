@@ -17,3 +17,25 @@
         ]
     }
 ]
+
+[
+    {
+        {
+            "fname": "andrew",
+            "lname": "andrew",
+            "email": "andrew@garfield",
+            "phone": 9883475729,
+            "address": "andrew",
+            "city": "andrew",
+            "state": "wb",
+            "pincode": 734003,
+            "gender": "male",
+            "dob": "15-12-1999",
+            "coursecode": "MCA",
+            "password": "testtest",
+            "batchesEnrolledIn": ["MCAJULY2023", "MCANOV2023"],
+            "subjectCode": ["SUBCODE1", "SUBCODE2", "SUBCODE3"]
+        }
+    }
+]
+
