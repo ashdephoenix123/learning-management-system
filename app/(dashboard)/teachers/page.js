@@ -15,9 +15,9 @@ const page = () => {
     useEffect(() => {
         if (allBatchTeachers.length > 0) return;
         const fetchBatchUsers = async () => {
-            const res = await fetch(`/api/findAllTeachers?coursecode=${coursecode}&batchcode=${batchCode}`);
-            const data = await res.json();       
-            if(data.status){
+            const res = await fetch(`/api/findAllTeachers?coursecode=${coursecode}&batchcode=${batchCode}`, { cache: 'no-store' });
+            const data = await res.json();
+            if (data.status) {
                 console.log(data.teachers)
                 setAllBatchTeachers(data.teachers)
             } else {
