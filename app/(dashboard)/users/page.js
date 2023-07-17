@@ -12,8 +12,6 @@ const page = () => {
     const [allBatchUsers, setAllBatchUsers] = useState([]);
     const [loading, setLoading] = useState(true)
 
-    console.log(allBatchUsers);
-
     useEffect(() => {
         if (allBatchUsers.length > 0) return;
         const fetchBatchUsers = async () => {

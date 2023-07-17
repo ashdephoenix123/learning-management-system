@@ -20,7 +20,6 @@ export async function POST(request) {
             { $push: { inbox: { from, to, subject, message, isIncoming: false, isRead: true, recipientID: updateRecipientInbox.inbox[updateRecipientInbox.inbox.length - 1].id } } },
             { new: true }
         );
-
         const updateRecipientInboxAgain = await User.findOneAndUpdate(
             { email: to, 'inbox._id': updateRecipientInbox.inbox[updateRecipientInbox.inbox.length - 1].id },
             { $set: { 'inbox.$.senderID': updateSenderInbox.inbox[updateSenderInbox.inbox.length - 1].id } },

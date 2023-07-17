@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import React, { useState } from 'react'
 import { RxCross2 } from 'react-icons/rx';
 import { useRootContext } from '../provider/RootProvider';
@@ -52,7 +51,7 @@ const SendMessage = ({ recipientEmail }) => {
 
     return (
         <>
-            <button onClick={() => { setShowModal(true); console.log('hi') }} className='bg-blue-600 text-sm text-white px-1.5 py-0.5 mt-4 rounded hover:bg-blue-700'>
+            <button onClick={() => { setShowModal(true) }} className='bg-blue-600 text-sm text-white px-1.5 py-0.5 mt-4 rounded hover:bg-blue-700'>
                 Send a Message
             </button>
             {
