@@ -72,6 +72,12 @@ const Page = () => {
         };
     }, []);
 
+    useEffect(()=> {
+        if(localStorage.getItem('token')){
+            setLoader(true)
+        }
+    }, [])
+
 
     return (
         <>
